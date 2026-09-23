@@ -1,0 +1,181 @@
+# EcoSuit SOLO — Earth → Moon → Earth, no spacecraft
+**The suit is the vehicle.**
+This is the composition of that object, not a way to hide a capsule behind a plastron.
+
+A 210–250 kg worn ER-1 article cannot do this. The rocket equation and Earth entry both refuse.
+SOLO is therefore a **person-shaped stage**: exo + plates + hatch + the tanks, engines, shield, and days of LS that used to live in other vehicles.
+
+---
+
+## 0. Verdict on “just the suit”
+
+| Job | Worn ER-1 (~230 kg) | SOLO closed system |
+|---|---|---|
+| 15–16 km/s Earth → lunar surface | No | Multi-stage tanks you are wearing |
+| Lunar stay + TEI | No | More tanks |
+| 11 km/s Earth interface | No. Chest radius is a blowtorch | A real heat shield with a usable radius, then chutes or a landing burn |
+| Walk after landing | Yes | Only if the stages have been dropped |
+
+Hydrolox, Δv ≈ 18 km/s propulsive (out + Moon ascent + TEI, Earth landing on a shield):
+
+    m0 / mf = exp(Δv / ve) ≈ exp(18 / 4.4) ≈ 60
+
+If “dry” were 250 kg, wet mass ≈ 15 t — and that dry number is a lie, because the tanks and engines to move 15 t are themselves tonnes. Closed SOLO sits in the **tens of tonnes wet** class, not the backpack class. Cold gas and 2600 am ABH-in-the-sternum do not change this.
+
+ABH-2600-REAL in the chest remains FAIL-CLOSED (12 g at 1 m, 132 g at 0.3 m). Ice does not feed 2.6 fm.
+
+---
+
+## 1. What SOLO is made of (the whole object)
+
+Three discarded stages + one reentry body that still looks like the suit.
+STAGE 0   Earth liftoff / max-q / to ~2–3 km/s     drop STAGE 1   to LEO / TLI energy                       drop STAGE 2   TLI + midcourse + LOI + landing           drop or keep as lunar pack CORE      crew + HUT + plates + shield + TEI + LS   this is the “suit” that comes home
+
+Single-stage Earth→Moon→Earth in one set of tanks: mass explodes. SOLO stages or it does not exist.
+
+---
+
+## 2. CORE composition (the thing that lands on Earth)
+
+Same layer order as MK.I, then the vehicle parts glued to the dorsal lattice and the windward OML.
+
+### 2.1 Crew shell
+- Rear-entry HUT, step-in hatch, dual seals
+- BLAD + REST + LCVG + helmet / slit visor
+- EXO-TI / Ti-6Al-4V ELI spine, yoke, hatch ring
+- SEAs hip/knee, cable-SEAs arm/ankle, clutches fail-OPEN
+- CUP-SM analog only (≤ 8 kg). No REAL core
+
+### 2.2 Windward OML (this is now a heat shield, not a fashion tile)
+Earth interface ~11 km/s. Stagnation heating on a human-chest radius is unsurvivable if the chest *is* the nose.
+
+SOLO therefore cheats geometry, not physics:
+- Reentry attitude: feet- or pack-first, **effective nose radius metres, not centimetres**
+- Windward stack, outside → in:
+  1. Ablator or HRSI-class tile / PICA-class / or ceramic-hemp only as isolator under a real ablator
+  2. Strain isolator (HEMP / PI or metal honeycomb)
+  3. Structural skin (Ti-6Al-4V or Grade C 718)
+  4. Insulation
+  5. Pressure shell
+- Leeward: CER-W / metal radiator, pack, hatch
+- Visor closed, slit capped, V-EBM inhibited
+- After plasma: jettison or keep charred windward scales; they are not walk-off tiles
+
+CER-B alone on a 0.3 m sternum is not this shield.
+
+### 2.3 Home-stage propulsion (TEI + lunar ascent if Stage 2 is gone)
+- Storables or hydrolox on the dorsal lattice and pelvic yoke
+- Engines on the yoke / pack corners, never on hemp cores
+- T/W_lunar ≥ 2 if this core must leave the Moon by itself
+- T/W_Earth of the **CORE alone** is irrelevant; Stage 0 owns the pad
+- RCS on pack corners for entry attitude
+
+### 2.4 Earth landing after the shield
+Pick one; both are part of SOLO, not a waiting spacecraft:
+- Drogue + mains out of the pack, or
+- Residual propulsive touchdown
+
+Splash or dirt. Hatch opens. Step-out.
+
+### 2.5 Life support (no cabin to hide in)
+The CORE carries the whole cruise.
+
+| Item | Order |
+|---|---|
+| Duration | 6–10 days out + stay + 3–6 days home (free-return class) |
+| O₂ / N₂ | Tanks on pack / yoke, not a 8 h EVA bottle |
+| CO₂ | Regenerable or a canister mass that is a stage by itself |
+| Water | Drink + LCVG + radiator loop |
+| Power | Fuel cell or batteries sized in kWh-days, not EVA-hours |
+| Thermal | Radiators on leeward scales; entry is a heat-capacity + ablator problem |
+| Waste | In-suit |
+
+This LS mass is why “dry = 250 kg” never happens.
+
+---
+
+## 3. STAGE 0 / 1 / 2 composition (still “the suit” until they drop)
+
+| Stage | Job | Composition |
+|---|---|---|
+| 0 | Pad, 85–100 kN class, max-q | Drop tanks + engine cluster at the boots / yoke; acoustic load into exo not into faces; jettison before orbit |
+| 1 | Finish LEO / set up TLI | Hydrolox or methalox tanks as a dorsal “fat pack”; drop |
+| 2 | TLI, LOI, lunar landing | Landing legs that are the greave scales or a deployable yoke gear; engines as Stage 0 leftovers or a dedicated cluster |
+
+All dropped stages are EcoSuit-shaped tanks in the artwork. In mass properties they are stages.
+
+Feedstock if you insist on belt metal later: Grade A FeNi tanks are possible. Grade A FeNi heat shield is not.
+
+---
+
+## 4. Materials bill (SOLO CORE + what it drops)
+
+**Crew / structure**
+- Ti-6Al-4V ELI exo, hatch, yoke
+- 718 / 625 cup, engine bells, hot fittings
+- A286 or Ti captives
+- S-glass / PI where dielectric
+
+**Faces**
+- Windward: ablator or HRSI-class on a metre-class radius aeroshell that happens to be attached to the suit
+- Walk-off acreage: CER-B/W + hemp core **or** Grade A FeNi scales (not the windward nose)
+- Leeward: CER-W / radiator
+
+**Core / isolator**
+- HEMP-W/U/M + MAT-P + ADH-F on walk-off plates
+- Metal honeycomb under the shield
+- No hemp in cup, bells, or shield bond to structure without a fire line
+
+**Propellants (the mass)**
+- Stage 0–1: LOX/LH2 or LOX/CH4
+- CORE TEI: storables preferred (no 6-day cryo boiloff on a backpack)
+- RCS: GN₂ or MMH/NTO class
+- Ice particulates: working fluid on a radiator loop only — not a horizon feed
+
+**Reject on SOLO**
+- Single 230 kg garment
+- Sternum ABH-2600-REAL
+- FTL as a Δv source
+- “Chest tiles = Apollo heat shield”
+- Unclutched harmonic joints during 6 g
+- Suit O₂ as a muscle gas
+- One tank set for 18 km/s
+
+---
+
+## 5. Mass order (closed, not worn-pretty)
+
+| Block | Order of magnitude |
+|---|---|
+| Crew + CORE shell + shield + LS + TEI engines (dry) | 2–5 t if you are ruthless; higher if you are honest |
+| Wet CORE after Stage 2 drop (TEI + RCS + LS) | several tonnes |
+| Wet SOLO on the pad (all stages) | **tens of tonnes** |
+| Walk-off after landing (shell + crew, stages and char gone) | ~0.25–0.4 t if the CORE can shed the shield and empty tanks |
+
+If a number on a poster is 250 kg wet Earth-to-Moon-and-back, the poster is art.
+
+---
+
+## 6. Sequence with no other spacecraft
+
+1. Step-in on a stand that is also the pad hold-down. SEAs OPEN. HV off.
+2. Hatch, helmet. CORE is already inside Stage 0/1.
+3. Stage 0: liftoff, max-q, drop.
+4. Stage 1: orbital / TLI energy, drop.
+5. Stage 2: cruise burns, LOI, land on yoke gear. Dust protocol.
+6. EVA: CORE walks in plates. SEAs impedance. V-EBM only in hard vac.
+7. Leave Moon: Stage 2 leftovers or CORE engines. T/W_lunar ≥ 2.
+8. TEI from CORE tanks.
+9. Earth interface: CORE only. Windward shield into the corridor. Attitude from pack RCS.
+10. Chutes or last burn. Hatch. Step-out. Walk-off composition is ER-1 again.
+
+No chase vehicle. No waiting capsule. The dropped tanks are debris unless you plan recovery.
+
+---
+
+## 7. Title block
+
+- SOLO is a staged vehicle that keeps a suit silhouette.
+- Composition of the walk-off garment ≠ composition of the pad article.
+- Earth landing is a heat shield + chutes/burn, not a hemp sandwich.
+- No spacecraft means you *are* the spacecraft. Own the tonnes.
