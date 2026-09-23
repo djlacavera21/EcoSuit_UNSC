@@ -1,0 +1,233 @@
+# EcoSuit MK.I — Full specification
+**Article as drawn: form-fit hard suit, beaked sensor helmet, faceted ceramic-hemp plates, sternum cup, dorsal pack**
+**Status: paper article + visual lock. Not a 15 km/s vehicle. Not a worn black hole.**
+
+Serial family: ECO-MK.I / ER-1A / AS-optional  
+Visual lock: IMG_4540 / render o3fys
+
+---
+
+## 0. What this object is
+
+A rear-entry hard-shell EVA / abort garment with an internal exo, overlapping faceted plates, a sealed sternum LRU, and a dorsal service pack.
+
+It walks. It latches. It keeps a crew alive off-umbilical for an EVA day.
+It does **not** leave Earth, land on the Moon, or reenter at 11 km/s by itself.
+Those jobs belong to launchers, landers, and a capsule — or to EcoSuit SOLO, which is a staged vehicle wearing this silhouette, not this mass.
+
+| ID | Object | Worn? |
+|---|---|---|
+| MK.I / ER-1A | This spec | Yes ~210–250 kg walk-off |
+| ABH-2600-SM | Sternum module analog ≤ 8 kg | Yes |
+| ABH-2600-REAL | Rs = 2600 am, 1.75e12 kg | No. FAIL-CLOSED |
+| FTL-BH-1 | Drawing name for DSH-1 pack | Pack only. No FTL |
+| EcoSuit-AS | Belt FeNi / superalloy faces | Growth |
+| EcoSuit SOLO | Staged person-shaped vehicle | Tens of tonnes wet |
+
+---
+
+## 1. Visual lock (from the standing article)
+
+- Athletic form-fit hard suit. Plates follow muscle volumes. Not a box.
+- Overlapping triangular / diamond facets. Charcoal-black leading and core plates. Bone-white side and pack plates.
+- Thin hemp-brown core showing at selected seams (strain isolator, not decoration).
+- Circular sternum cup, four-bolt flange, faceted cap, concentric instrument face.
+- Dorsal tiled pack on a hatch-ring mate. White ceramic pack skin, dark frame.
+- Helmet: compact dark shell close to the skull. Circular brow sensor. Two white LED clusters on the brow. Pale angular cheek plates. Dark beaked visor cavity. Slim neck ring.
+- Dark joint pods at elbow, hip, knee, ankle.
+- Hangar-standing pose. No plume. No warp.
+
+Do not paint it red-gold. Do not open the visor into a gold slit on this lock — the lock is the beaked sensor helmet.
+
+---
+
+## 2. Architecture
+OML ceramic face (CER-B / CER-W) → densified IML + CER-WP → ADH-F 0.15–0.25 mm → hemp core 6–10 mm, edge-sealed → ADH-F → S-glass backing + Ti / FeNi doubler → HUT / exo lattice → bladder + restraint + LCVG
+
+Load path is lattice, never ceramic, never hemp.
+Rear hatch is the door. Helmet is not the door.
+Pack last at don. SEAs OPEN during step-in.
+V-EBM HV inhibited in air.
+
+Datums:
+- A — HUT sternum plane
+- B — sagital midplane
+- C — hatch-ring upper bolt plane
+
+Sternum hard points S1–S4: M8, 52 mm from center, 18 mm off midplane, plus 6 mm 12 o’clock pin.
+
+---
+
+## 3. Mass (walk-off, one crew)
+
+| Item | kg |
+|---|---|
+| Crew | ~80 |
+| HUT + exo + seals + helmet | ~40–55 |
+| Plate family | ~25–40 |
+| CUP-SM | 8 |
+| DSH-1 dry + hop coupon | ~45 |
+| EVA-day LS | ~15–25 |
+| **Worn total** | **~210–250** |
+
+---
+
+## 4. Materials
+
+### 4.1 Faces
+| ID | Material | Where |
+|---|---|---|
+| CER-B | Silica / alumina-silica, black HRSI-analog | Chest, shoulders, greaves, leading edges |
+| CER-W | Same, white LRSI-analog | Sides, pack, radiators |
+| CER-D | Densified IML | Every bonded ceramic |
+| CER-WP | AO / waterproof overcoat | All OML |
+
+AS growth: FE-A (slagged Fe–7Ni) or NI-C (600/718-class) instead of ceramic. Same facet language.
+
+### 4.2 Core
+| ID | Material |
+|---|---|
+| HEMP-W | Woven bast 2×2 or 4×4 skins |
+| HEMP-U | UD tape at fastener-adjacent skins |
+| HEMP-M | Mat fill |
+| MAT-P | PI or phenolic. Epoxy = ground dummy |
+| ADH-F | Flexible high-temp, 0.15–0.25 mm |
+| SEAL-PI | Edge seal, including every bore |
+
+No hemp in the cup, hatch ring, or nozzle land.
+
+### 4.3 Structure
+| ID | Material | Where |
+|---|---|---|
+| EXO-TI | Ti-6Al-4V | Longerons, fittings |
+| EXO-ELI | Ti-6Al-4V ELI | Hatch ring, crew-critical |
+| EXO-SG | S-glass pultrusions | Rib analog |
+| EXO-IN / 718 | Inconel 718 | Sternum spider, cup |
+| DBL-TI | Ti doubler | S1–S4 land |
+| FAST | A286 or Ti M8 captives | S1–S4, pack four-bolt |
+| BK-SG | S-glass backing | Plates |
+
+### 4.4 Soft goods
+BLAD, REST, LCVG, COMF, BETA analog, dual seals at hatch / neck / wrists.
+
+### 4.5 Cup (ABH-2600-SM only)
+- Envelope: OD 118 mm, clear bore 72 mm, depth 64 mm, cap ≤ 22 mm proud
+- CUP-TI or 718 wall, CUP-CU liner, CUP-W aft 2–4 mm, CUP-SG wrap
+- Waste heat analog ≤ 150 W cont / 400 W peak
+- No line labeled “to Rs”
+
+### 4.6 Pack (DSH-1 / FTL-BH-1)
+- ≤ 45 kg wet MK.I class
+- 6-4 or hybrid longerons, CER-W skins
+- 28 V PWR-1, COOL pair, TM, HV inhibit to V-EBM only
+- Optional GN₂ hop coupon
+- Dead-face on undock
+
+### 4.7 Reject
+VHB acrylic, carbon grease, open hydraulics, suit-O₂ as muscle gas, unclutched harmonic as sole path, bolt-through-ceramic, hemp in the cup, ABH-2600-REAL in the torso, FTL as a material, “chest tile = 11 km/s shield.”
+
+---
+
+## 5. Helmet (visual lock)
+
+| Item | Spec |
+|---|---|
+| Shell | Compact dark technical helmet, form-fit to skull |
+| Sensor | Circular concentric unit on brow centerline |
+| Lights | Two white LED clusters on the brow |
+| Cheeks | Pale angular plates, V language under the beak |
+| Visor | Dark beaked cavity, not a gold slit on this lock |
+| Neck | Slim ring to HUT. Dual seal |
+| HV | Visor/cap latch V-EBM inhibited in air |
+| Labels | No brand text on flight article |
+
+---
+
+## 6. Joints and actuators
+
+| Layer | Hardware | Use |
+|---|---|---|
+| 0 | Springs + clutches | Suit-torque cancel. Fail OPEN |
+| 1 | Rotary SEA hip, knee | Walk / kneel. OPEN at don and entry |
+| 2 | Cable-SEA shoulder, elbow, ankle | Motors on pack |
+| 3 | Silicone DEA + CNT | Gloves / soft goods in gas only |
+| V-EBM | PI vacuum-gap cells | Plate and visor latches in hard vac |
+
+Torque order: elbow ~15–18 Nm, knee ~30–40 Nm, hip flex ~40–70 Nm.
+Impedance on EVA. HOLD on landing spike and entry. OPEN on step-in.
+
+---
+
+## 7. Environments this article is built for
+
+| Case | Provision |
+|---|---|
+| 6 g + acoustic | Exo + spider 2× proof. Plates ride |
+| Vacuum / AO | Edge-sealed cores, CER-WP, V-EBM inhibit below dirty vac |
+| Lunar dust | Overlap hems, sealed bores |
+| Lunar 2–3 m/s | Yoke + HOLD |
+| Earth 11 km/s | Not this article. Capsule shield |
+| Pad abort hop | Optional GN₂, T/W 0.2–0.4 |
+
+---
+
+## 8. Step-in (rear hatch)
+
+1. Suit on stand, hatch open, pack off or swung, SEAs OPEN, HV off.
+2. Feet, sit into pelvic yoke, arms, hatch, pack, helmet, gloves.
+3. Pack-last. No weight on CAP-S. No third person aiming a foot.
+4. Full two-person 1 g first article ≤ 4 min.
+
+---
+
+## 9. Manufacturing (chest family, short)
+
+Parallel streams: ceramic faces → hemp cores → backing/doubler → bond → cup → spider → mate to HUT.
+
+Hemp cores: bake / degum / bake / impregnate Route A prepreg (PI or phenolic) / layup / cure / edge seal / outgas bake / serial.
+Chest bore: core stops at sealed land. No bast in the cup.
+First article: three-facet plastron + bore coupon + 2× Case A on dummy HUT.
+
+---
+
+## 10. Belt growth (EcoSuit-AS)
+
+| Grade | Face | Honest source |
+|---|---|---|
+| A | Fe–(5–8)Ni slagged | M-type / iron-meteorite analog |
+| B | A-286 / 800-class | Grade A + Cr (imported or extracted) |
+| C | 600 / 625 / 718 | Concentrated Ni + Cr,Al,Ti,Mo,Nb imports |
+
+Psyche is mixed metal + silicate, not a 718 billet.
+Hemp may stay under Grade A/B. Grade C can take metal foam.
+
+---
+
+## 11. Earth → Moon → Earth
+
+| Need | This article |
+|---|---|
+| Wear and EVA | Yes |
+| 15–16 km/s out | No. Launcher |
+| Lunar landing / ascent | No. Lander. Optional 40–300 m/s hop only |
+| 11 km/s home | No. Capsule heat shield |
+| SOLO “no spacecraft” | Separate spec. Staged tonnes + real shield radius |
+
+ABH-2600-REAL energy is large. Wearable g/tide and 116 MW at 0.3 m are not. Ice does not feed 2.60 fm.
+
+---
+
+## 12. Split (do not collapse)
+
+SEAs walk.
+V-EBMs latch in vacuum.
+DEAs stay in gas.
+Ceramic + hemp is the worn OML.
+CUP-SM is a shielded LRU.
+DSH-1 is the backpack.
+ABH-2600-REAL stays off the body.
+Launchers own the sky.
+Landers own the dirt.
+Capsules own the plasma.
+
+Title block: ECO-MK.I form-fit, helmet lock IMG_4540, SM only in the cup.
