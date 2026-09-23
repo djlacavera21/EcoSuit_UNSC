@@ -1,0 +1,212 @@
+# EcoSuit MK.I — Exoskeleton Actuator Types
+**Internal frame · ceramic-hemp plate armor · Iron Man packaging constraints**
+
+The EcoSuit frame is not a warehouse exo and not a movie suit. The actuator only has to beat three loads: the suit’s own joint stiffness, the crewmember’s work (tools, habitat, fall recovery), and whatever gravity you are standing in. Everything else is packaging, heat, vacuum, and what happens when it dies mid-EVA.
+
+---
+
+## 1. Load budget
+
+Pressurized-suit data is the right starting budget. Empty-suit elbow torques are only a few newton-metres; with a human inside they climb.
+
+| Joint | Order-of-magnitude budget | Notes |
+|---|---|---|
+| Elbow | ~15–18 N·m class | High cycle, tool work |
+| Knee | ~30–40 N·m class | Walk, kneel, stairs |
+| Hip flexion | ~40–70 N·m class | Assist may be ~50% of peak |
+| Hip abduction | can exceed 100 N·m | Do not power this first |
+| Glove | force-assist / fatigue | Different problem than gait |
+
+Reference points:
+- Advanced-suit / S3-class requirement bands: elbow ~15–18 N·m, knee ~32–40 N·m, hip flex ~41–72 N·m, hip abd much higher.
+- EVA-assist patent example: hip −50 to 140 N·m, knee −30 to 40 N·m, targeting ~50% assist.
+- NASA X1: series-elastic motors at hips and knees for this class of problem.
+- Gloves are a separate war: pressurized-glove fatigue, not walking torque.
+
+That budget already kills a lot of lab actuators.
+
+---
+
+## 2. Design rules (before picking hardware)
+
+1. Power only the sagittal work joints in MK.I.
+2. Default-on-failure = free or clutched-open, never locked.
+3. Actuator LRU removes without pulling ceramic plates.
+4. Impedance control. The human generates the path. The exo cancels suit hysteresis and adds a boost cap.
+5. Heat and vacuum beat peak-torque on the spec sheet.
+6. Distal mass is metabolic cost and plate-clash risk. Get motors off the limb when you can.
+7. Do not use suit oxygen as a pneumatic working fluid.
+
+Movie suits pretend every joint is a sealed rotary servo with infinite power and no heat. Real Iron-Man-adjacent hardware (Sarcos, NASA X1 / IHMC) motorized hip/knee (and later ankle) and left sidestep, turn, and toe-point passive.
+
+EcoSuit plates add one more rule: if a motor dies, you open a dorsal hatch or pop a segment. You do not depot-strip a pauldron on the lunar surface.
+
+---
+
+## 3. Actuator families
+
+### 3.1 Rigid electric — motor at the joint
+Brushless DC (or PMSM) + gearbox (harmonic, planetary, cycloidal) sitting on the hinge.
+
+**Why people use it:** mature, easy to control, no fluid, high bandwidth, simple power architecture (batteries + bus). Most published exoskeletons use electric power; brushed/brushless motors dominate.
+
+**EcoSuit fit:** good for knee and elbow if the can is small enough to hide under a plate segment. Bad for shoulder and hip if you park a harmonic drive in the joint — those cans fight the Iron Man silhouette and dump heat into the hemp core.
+
+**Must-haves:**
+- High-ratio gearboxes are not backdrivable. A seized harmonic drive becomes a locked suit joint. That is a crew-safety item.
+- Add a clutch, a series spring, or a passive freewheel path.
+- Vacuum-rated grease or dry lube. Harmonic drives hate the wrong lubricant in vacuum.
+
+### 3.2 Series elastic / quasi-direct-drive (SEA, QDD)
+Motor + reduction + a spring you can measure. Torque ≈ spring deflection. NASA X1 and the IHMC lineage used rotary SEAs at hip and knee for this reason.
+
+**Why it belongs on EcoSuit:**
+- Command impedance, not just position. Soft when the crew moves, stiff when they plant a tool.
+- Shock from a stumble or plate impact goes into the spring, not the gearbox teeth.
+- Force control is good enough to cancel suit hysteresis instead of fighting the human.
+
+**Cost:** the spring eats volume. Under overlapping ceramic segments that is the real constraint, not the motor physics.
+
+Quasi-direct-drive (large-gap torque motor, ~6:1–10:1, no harmonic) is the current Earth-exo fashion. Better backdrive, worse mass. On the Moon that mass penalty shrinks; in the launch stack it does not.
+
+### 3.3 Cable / Bowden / tendon drive
+Motors live on the dorsal lattice or PLSS. Steel or synthetic lines run to the joint.
+
+This is how RoboGlove / Robonaut-derived assist gloves pulled ~220 N peak grasp with forearm linear actuators. It is also how many soft upper-limb exos keep distal mass down.
+
+**EcoSuit fit: default for anything distal.**
+- Elbow, wrist, glove, maybe ankle.
+- Motors sit in the cooled, serviceable volume behind the hatch — next to the PLSS, not inside a pauldron.
+- Cables thread through the exo longerons. Plates never see a motor can.
+
+**Taxes:**
+- Bowden friction is a control problem and a heat problem. It changes with bend radius, temperature, and dust.
+- Cable stretch looks like compliance until it looks like slop.
+- A cut cable is a single-point failure unless you run antagonists in pairs.
+- Lunar / Martian dust in a sheath will destroy a tendon system if you let it.
+
+Add a series spring at the distal end and you get a cable-SEA — often the right compromise.
+
+### 3.4 Hydraulics and electrohydrostatic (EHA)
+Classic hydraulics: pump + valves + hoses + cylinders. Highest force density. Early Sarcos “Iron Man” work was hydraulic and burned kilowatts; later efficiency work got walking-with-load down toward hundreds of watts. Lesson: hydraulics are only justified if you need the force and you win the power war.
+
+**Inside a pressure garment this is almost always the wrong answer.** A leak is a contamination event, a slip hazard, and a fire/toxicity review. Vacuum-side hydraulics need a closed loop that never sees the cabin or the suit volume.
+
+**Electrohydrostatic actuator (EHA)** — a tiny pump married to a cylinder as one LRU, no ship-wide plumbing — is the only hydraulic variant worth keeping on the table. High force at hip/knee for 1g or loaded construction. Still a fluid. Still a seal. Still a thermal lump. Use only if electric + cable cannot make the torque at the mass you will accept.
+
+### 3.5 Pneumatics and pneumatic artificial muscles (PAM / McKibben / bubble muscles)
+Air muscles contract when inflated. Intrinsic compliance, high force-to-weight in the muscle itself, ugly when you count the compressor and tank. Used in EVA-glove exo concepts because they are light at the finger. Soft bubble muscles have also been proposed for hypogravity loading suits.
+
+**Space problem:** you do not vent air overboard for eight hours of EVA. A closed pneumatic loop is a compressor, dryer, and accumulator on the PLSS. Compressors hate vacuum heat rejection. PAM hysteresis is real. Bandwidth is lower than a good electric joint.
+
+**Where it still wins:** glove and maybe elbow, if the gas is a closed loop shared with an existing pressure system and you accept “assist, not position servo.”
+
+### 3.6 Passive and semi-passive — springs, clutches, brakes
+No motor. A spring dumps energy in at the right phase of gait. A clutch decides when the spring is in the loop.
+
+**This should be the first layer of EcoSuit, not the last.**
+- Suit joints already have hysteresis. A well-placed spring can cancel the rising part of that curve so the crew is not doing isometric work all day.
+- Gravity-balance at the shoulder (even in 1/6 g) is cheap mass that never needs a battery.
+- A clutch that opens on power loss is your locked-joint escape path.
+
+X1 mixed four powered DOF with six passive DOF for exactly this reason — do not motorize sidestep and toe-point if a bearing and a spring will do.
+
+### 3.7 Smart materials — SMA, EAP / DEA, vacuum-gap electrostatic
+**SMA wire:** tiny, huge force-to-weight, slow, thermally inefficient, cycle-life limited. Already built into a soft EVA-glove exo (Flexinol-class wire, ~35 N per 0.5 mm wire). Fine for fingers. Not fine for a knee. Heat is the enemy next to a hemp core.
+
+**Dielectric elastomers:** high voltage, historically unreliable, materials not automatically space-clean.
+
+**Vacuum-gap electrostatic multilayer actuators (2025):** they use vacuum as the dielectric. Demonstrated ~0.7 g devices, >4 N, >100 Hz, peak ~1.4 kW/kg, space-polymer stack. That is gripper / small-joint / plate-deployer territory, not hip-walk territory — yet. Worth a coupon program for visor mechanisms, plate latches, and maybe wrist. Not the primary gait actuator in MK.I.
+
+### 3.8 Soft exosuit textile actuators
+Wearable ribbons that pull along the limb instead of a rigid hinge. Wrong as the primary EcoSuit architecture — the design already committed to a rigid internal frame and ceramic segments — but useful under the plates as a second layer that unloads the shoulder or assists glove close without another gearbox.
+
+---
+
+## 4. Comparison matrix
+
+| Type | Force density | Distal mass | Vacuum | Leak risk | Backdrive / safety | Bandwidth | EcoSuit role |
+|---|---|---|---|---|---|---|---|
+| In-joint geared electric | Med | High | OK with dry/vac lube | None | Poor unless clutched | High | Elbow/knee only if clutched |
+| Rotary SEA | Med | Med | OK | None | Good | Med-high | Hip + knee primary |
+| QDD | Med-low | Med-high | OK | None | Excellent | High | Ankle / later hip |
+| Cable / Bowden | Med | Low at joint | OK; dust is the enemy | None | Good with spring | Med | Shoulder, elbow, glove, ankle |
+| Cable-SEA | Med | Low at joint | OK; dust | None | Good | Med | Preferred remote drive |
+| Open hydraulics | Very high | High system | Hard | High | Design-dependent | High | Reject |
+| EHA (self-contained) | High | Med | Possible | Medium | Design-dependent | High | Only if electric cannot hit torque |
+| PAM / pneumatics | Med in muscle | Low at joint | Compressor/heat problem | Medium (closed loop) | Intrinsic compliance | Low-med | Glove / maybe elbow |
+| Springs + clutches | Low | Very low | Excellent | None | Excellent (opens on loss) | n/a | Layer 0 on every joint |
+| SMA | High local | Very low | Heat problem | None | Poor / slow | Low | Glove, latches |
+| Vacuum-gap electrostatic | High W/kg, low absolute force | Very low | Native advantage | None | TBD | High | Latches, visor, wrist coupons |
+
+---
+
+## 5. Joint-by-joint downselect
+
+| Joint | Job | Do not use | MK.I pick | Why |
+|---|---|---|---|---|
+| Hip flex/ext | Walk, kneel, stand from squat | SMA, PAM as primary | Rotary SEA or EHA LRU on the pelvic yoke | Highest torque, needs compliance |
+| Hip abd/rot | Sidestep, turn | Powered (at first) | Passive bearings + soft stop | X1 lesson |
+| Knee | Walk, kneel, stairs | Hydraulic plant | Rotary SEA in the thigh longeron, or cable-SEA from the yoke | High cycle, must backdrive |
+| Ankle | Push-off, balance | Big gearbox | QDD or cable-SEA; spring-clutch for MK.I | Powered ankle on X1 improved push-off and balance |
+| Waist | Bend to pick up | Full servo | Passive convolute + optional lock | Hard-suit already gives you the bearing |
+| Shoulder flex | Reach, tools | In-joint harmonic | Cable-SEA from dorsal pack or small SEA behind pauldron | Volume under plates is the limit |
+| Elbow | Tools, hold | Hydraulic | Cable from upper-arm or small SEA | Moderate torque, high cycle |
+| Wrist / glove | Fatigue, grip | Anything bulky | SMA or PAM or tendon glove exo | Already a researched EVA problem |
+| Plate latches / visor | Open armor, don | Walk-class motors | Vacuum-gap electrostatic or SMA | Tiny, vacuum-native |
+
+---
+
+## 6. Recommended MK.I hybrid
+
+**Layer 0 — passive**
+- Gravity-balance springs at the shoulder
+- Suit-torque-cancel springs at elbow and knee
+- Mechanical clutches that open on power loss
+
+**Layer 1 — work joints**
+- Rotary SEAs at hip flex and knee
+- Packaged in the pelvic yoke and thigh longeron so plates can come off over them
+
+**Layer 2 — remote electric**
+- Bowden or tendon SEAs for elbow, ankle, and shoulder
+- Motors in the dorsal lattice next to the PLSS where you can cool and swap them
+
+**Layer 3 — glove**
+- Separate tendon or SMA/PAM package
+- Do not wait for the gait system
+
+**Not in MK.I**
+- Ship-wide hydraulics
+- Suit-gas pneumatics
+- SMA on the legs
+- Electrostatic as a walk actuator
+
+Power architecture: one bus on the PLSS. Actuators are LRUs. Default state on power loss is free or clutched-open, never locked, except for a voluntary parking brake the crew sets.
+
+Thermal: every watt the motor does not turn into torque becomes a problem against a ceramic-hemp stack designed as an insulator. Prefer efficiency and remote motors over more torque in the joint.
+
+Control: impedance first, position almost never.
+
+This stack matches how X1 was built, how EVA glove research actually looks, and how the EcoSuit plates want to be serviced. It keeps the Iron Man read (visible joint pods, armor that opens) without pretending a harmonic drive belongs inside every segment.
+
+---
+
+## 7. Failure modes to design against
+
+| Failure | Outcome if ignored | Mitigation |
+|---|---|---|
+| Seized gearbox | Locked joint, cannot walk or don | Clutch / freewheel path; no unclutched harmonic as sole path |
+| Cut / jammed cable | Lost DOF | Antagonist pair; inspectable sheath; dust boots |
+| Hydraulic leak | Contamination, slip, toxicity review | Do not use open hydraulics inside the garment |
+| PAM / pneumatic leak | Assist loss; possible pressure interaction | Closed loop only; never suit O2 |
+| Motor overheat under plates | Bond lift on hemp-ceramic stack | Remote motors; thermal isolators; current limits |
+| Power loss | Suit becomes dead weight or a cage | Passive springs still work; joints free |
+| Software runaway | Suit fights the crew | Hard torque / velocity caps in firmware and analog cutoff |
+
+---
+
+## 8. Next documents
+- Power / thermal budget: watts per joint × EVA hours × battery vs fuel-cell vs suit-bus
+- Single-joint SEA packaging drawing that actually fits under a pauldron or thigh segment
+- Glove-only actuator downselect (tendon vs SMA vs PAM) as a parallel MK.I article
