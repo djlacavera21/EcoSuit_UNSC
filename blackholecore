@@ -1,3 +1,146 @@
+# EcoSuit MK.I — ABH reference core
+**Rs ≈ 2600 attometers (2.60 fm) · ice particulates as paper feed · not a worn point mass**
+
+1.3 am was a gamma firehose (465 TW) with almost no gravity at arm’s length.
+2600 am is the other side of the same scaling: quieter Hawking, impossible to wear.
+M ∝ Rs.  P_H ∝ 1/M².  g ∝ M.  Lifetime ∝ M³.
+
+---
+
+## 1. Object
+
+Rs = 2.60 × 10⁻¹⁵ m = 2600 am = 2.60 fm
+(proton charge radius ~0.84 fm; this horizon is nuclear-scale, not atomic)
+
+M = Rs c² / (2G) = 1.751 × 10¹² kg  ≈ 1.75 billion tonnes
+
+| Quantity | 1.3 am (old) | 2600 am (EcoSuit ref) |
+|---|---|---|
+| Mass | 8.75 × 10⁸ kg (875,000 t) | 1.75 × 10¹² kg (1.75 × 10⁹ t) |
+| Mc² | 7.87 × 10²⁵ J | 1.57 × 10²⁹ J |
+| vs 200 kg @ 16 km/s | 3 × 10¹⁵ × | 6 × 10¹⁸ × |
+| vs world primary energy | ~1.3 × 10⁵ yr | ~2.6 × 10⁸ yr |
+| T_Hawking | 1.40 × 10¹⁴ K | 7.01 × 10¹⁰ K |
+| P_Hawking | 465 TW | **116 MW** |
+| Evaporation life (unfed) | ~1,800 yr | ~1.4 × 10¹³ yr |
+| L_Eddington | 6.5 GW | 13 TW |
+| P_H / L_Edd | 7 × 10⁴ (blows feed away) | 9 × 10⁻⁶ (Hawking no longer ejects feed) |
+| Capture cross-section | 3.6 × 10⁻³⁵ m² | 1.4 × 10⁻²⁸ m² |
+| H₂O diameter / Rs | 2.1 × 10⁸ | 1.1 × 10⁵ |
+| g at 1 m | 0.006 g | **12 g** |
+| g at 0.3 m (torso) | 0.066 g | **132 g** |
+| Tide / 20 cm at 0.3 m | 0.09 g | **176 g** |
+| Flux on 1 m² at 1 m | 3.7 × 10¹³ W/m² | 9.2 MW/m² |
+| Standoff for 1 kW/m² | 192 km | **96 m** |
+| Standoff for 1 MW/m² | 6.1 km | **3.0 m** |
+
+Hawking is now a **116 MW** hard-spectrum source, not a city-killer.
+Gravity is now the thing that forbids a sternum mount.
+
+---
+
+## 2. What “proper sized for EcoSuit” does and does not mean
+
+116 MW is vehicle-scale electrical / thermal power.
+It is not wearable point-mass gravity.
+
+A 1.75 billion tonne singularity in the torso is 132 g mean acceleration and ~176 g of tide across the chest. The crew is a smear on the pelvic yoke before the first plate latch cycles.
+
+So the EcoSuit reference ABH is **not in the suit**.
+It is a remote core for a stage the suit rides, parked metres-to-tens-of-metres away, on a boom or a separate hopper bus.
+
+If you insist on “in the backpack” you are describing a 1.75 × 10⁹ t object whose near-field rips the hemp-ceramic stack off the frame. That is not MK.I hardware.
+
+---
+
+## 3. Ice particulates at 2600 am
+
+Two jobs people conflate. Only one is even paper-legal.
+
+### 3.1 Accretion into the hole (stoke Mc²)
+Horizon is still ~100,000 × smaller than a water molecule.
+Capture area is still 1.4 × 10⁻²⁸ m².
+You do not pour ice into 2.6 fm.
+
+Unlike 1.3 am, Hawking is now *below* Eddington. Radiation will not automatically blow the feed away. That does not create a funnel. Ice still has to become a plasma disk at nuclear scales and lose angular momentum. There is no plumbing for that on a suit. Label it “not a feed line.”
+
+### 3.2 Ice as working fluid around the hole (the only honest use)
+Leave M alone. Steal heat. Ice is reaction mass / coolant for a heat engine sitting at a controlled standoff.
+
+- 116 MW intercepted at ~3 m is a 1 MW/m² class exchanger if you build a ~10 m² catcher — brutal, but a number engineers recognize.
+- 116 MW at ~100 m is solar-constant-ish on a large shield.
+- Directed jet, 100% of P into ve = 4.4 km/s: T = 2P/ve ≈ **53 kN**.
+- 1% conversion: **0.53 kN**. 0.01%: **5 N**.
+
+53 kN lifts ~5.4 t against Earth g. That is a small hopper / abort pack, **not** the 85–100 kN Earth-liftoff class of a 6.7 t hydrolox Moon stack, and not 15 km/s of Δv.
+
+Energy in the hole would cover Earth→Moon 10¹⁸ times over.
+Power and thrust available to a nozzle would not.
+
+Hawking still has no throttle. P_H is fixed by M. Feed (if you could) makes it dimmer. Starve it and it barely changes on human timescales — lifetime is 10¹³ years.
+
+---
+
+## 4. Against the Earth→Moon stress test
+
+| Need | 2600 am ABH |
+|---|---|
+| Energy | Yes, by ~10¹⁸ |
+| Wearable core | No. 12 g at 1 m, 132 g in the torso |
+| Pad thrust @ 100% thermal jet | ~53 kN — short of 85–100 kN for the 6.7 t stack |
+| Pad thrust @ realistic intercept | newtons to hundreds of newtons |
+| Throttle | No |
+| Ice into the horizon | No |
+| Ice as remote working fluid | Paper-only, metres-to-hundreds of metres away |
+| Atmosphere / max-q / TPS | Unchanged. The suit still does not fly 7.8 km/s through air |
+| Manufacture | Concentrating 1.57 × 10²⁹ J into 2.6 fm is not a shop traveler step |
+
+Launchers still own 15 km/s.
+The ABH, on these numbers, is a **remote 116 MW plant** for Case C (lunar hopper) or a paper Case D, not a Case A Earth liftoff engine and not a plate-mounted core.
+
+---
+
+## 5. EcoSuit integration rules (2600 am reference)
+
+1. Core is never inside the pressure garment or the plate stack.
+2. Minimum crewed standoff is set by g and tide, not by Hawking: keep the hole **tens of metres** off the body on a boom / hopper bus. At 10 m, g ≈ 0.12 g and flux ≈ 92 kW/m² — still a shield problem, no longer a tide problem.
+3. Ice tanks live on that bus. No feed line claims to terminate at Rs.
+4. Heat catcher and nozzle live on the bus. Plume never kisses hemp cores.
+5. Suit-side: SEAs in hold during a burn, V-EBMs lock plates, DEAs off, ceramic is TPS/MMOD only.
+6. HV inhibit, vacuum interlocks, and Case A launch loads do not change.
+7. Label every drawing “ABH-2600, remote, not worn.”
+
+---
+
+## 6. Scaling reminder (so the next radius change is honest)
+
+Rs_am     mass                 P_H         g @ 1 m     wear?
+1.3       8.75e8 kg            465 TW      0.006 g     radiation kills
+2600      1.75e12 kg           116 MW      12 g        gravity kills
+~130*     ~8.8e10 kg           ~46 GW      0.6 g       still a station
+~13**     ~8.8e9 kg            ~4.6 TW     0.06 g      radiation again
+
+*130 am and 13 am are not EcoSuit refs. They show there is no radius that is both wearable and a quiet engine. Quiet Hawking wants large M. Wearable g wants small M.
+
+---
+
+## 7. Assignment
+
+| Layer | Hardware | Job |
+|---|---|---|
+| 0–2 | Springs, SEAs, cable-SEAs | Walk and tools |
+| 3 | DEA (silicone, interior) | Glove / soft goods in gas |
+| V-EBM | Vacuum-gap cells | Plate latches in vacuum |
+| Propulsion wearable | Optional Case C hopper pack | Lunar hops, not Earth→Moon |
+| **ABH-2600** | **Remote bus only** | **116 MW paper plant, ice as working fluid at standoff** |
+| Earth → Moon | Launcher + lander | 15–16 km/s |
+
+SEAs walk.
+V-EBMs latch.
+DEAs stay in gas.
+ABH-2600 stays off the body.
+Launchers still own the sky.
+
 # EcoSuit — ABH 1.3 attometer core + ice feed
 **Paper reactor only. Not a wearable engine.**
 
