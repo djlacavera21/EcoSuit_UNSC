@@ -1,0 +1,194 @@
+# EcoSuit MK.I — Materials list
+**Plates · exo · joints · sternum cup (ABH-2600-SM) · dorsal harness (FTL-BH-1 / DSH-1) · soft goods**
+Paper article. Not a method to build a horizon or an FTL drive.
+
+---
+
+## 1. Thermal / armor faces (OML)
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| CER-B | High-purity silica or alumina-silica ceramic, black borosilicate / glass coat (HRSI analog) | Ventral plates, leading edges, harness leading edges, sternum cap | High-heat, abrasion, optical |
+| CER-W | Same substrate, white silica + alumina coat (LRSI analog) | Dorsal acreage, radiator petals, low-heat zones | On-orbit thermal control |
+| CER-D | Densified IML slurry on ceramic inner face | Every bonded ceramic | Bond-line strength (Shuttle lesson) |
+| CER-WP | Waterproof / AO overcoat | All ceramic OML after coat-fire | Moisture and atomic oxygen |
+| CAP-S | Ceramic-faced composite sternum cap, faceted, removable | ABH-2600-SM forward cap | Matches plastron language; LRU |
+
+Do not bolt through ceramic. Do not leave sharp ceramic edges. Chamfer or radius every free edge.
+
+---
+
+## 2. Strain-isolation cores and sandwich
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| HEMP-W | Degummed hemp bast, woven 2×2 or 4×4 | Plate cores, harness skin cores | SIP analog, damping, mass |
+| HEMP-U | Hemp unidirectional tape | Directed-stress skins on cores | Bearing along principal stress |
+| HEMP-M | Short-fiber hemp mat / oriented hurd | Core fill | Bulk, insulation |
+| MAT-P | Phenolic or polyimide matrix (flight-like) | Hemp impregnation | Temp + outgas vs epoxy |
+| MAT-E | Toughened epoxy | Ground demo only | Not a flight core matrix |
+| ADH-F | High-temp flexible adhesive (RTV-class or space-rated equivalent) | Ceramic IML ↔ core ↔ backing | Strain isolation bondline 0.15–0.25 mm |
+| SEAL-PI | PI tape + resin dam | All hemp core edges | Stop vacuum / moisture wick |
+| SKIP | — | Inside sternum cup, inside hatch ring bore | Hemp is forbidden in the cup |
+
+Incoming hemp: moisture bake-out, bag with desiccant. Treat like prepreg.
+
+---
+
+## 3. Backings, doublers, inserts
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| BK-SG | S-glass / toughened epoxy sheet | Plate backing, HUT growth option | Bearing, dielectric |
+| BK-CH | Carbon-hemp hybrid veil on backing side | High-fastener plates | Fastener bearing |
+| DBL-TI | Ti-6Al-4V insert plate / doubler | Sternum S1–S4, hatch hard points | Bolt land, not in ceramic |
+| DBL-SG | S-glass doubler | Same, electrically isolating option | When HV is nearby |
+| INS-TI | Ti or A286 threaded inserts, co-cured or potted | Backing hard points | Captive fasteners |
+| PIN-17 | 17-4 PH or Ti 6 mm dowel | Sternum 12 o’clock | Alignment only |
+
+---
+
+## 4. Internal exoskeleton
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| EXO-SG | S-glass / epoxy or S-glass / PI pultrusions | Longerons, rib analog | Primary worn structure |
+| EXO-C | Intermediate-modulus carbon hybrid (selective) | Spine, pelvic yoke | Stiffness where hemp-carbon is allowed |
+| EXO-TI | Ti-6Al-4V tubes / machined nodes | Yoke, hatch ring, joint housings | Fittings, proof load |
+| EXO-AL | Al-Li 2195 or 6061-T6 | Hatch, non-critical fittings, growth HUT | Mass; not hot-structure |
+| EXO-IN | Inconel 718 | Sternum spider / mount boss | Hot, high-bearing cup flange |
+| FAST-A286 | A286 or Ti-6Al-4V captive bolts (M8 sternum) | S1–S4, dorsal four-bolt | Vacuum-compatible, captive |
+| LUBE-V | Dry film or vacuum-rated grease | Bearings only | Harmonic / rotary joints |
+
+Load path is lattice, never plate core.
+
+---
+
+## 5. Pressure garment and soft goods
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| BLAD | Urethane-coated nylon (or qualified equivalent) | Bladder | Gas barrier |
+| REST | Polyester / restraint fabric | Over bladder | Shape + load |
+| LCVG | Existing liquid-cooling / ventilation garment family | Against skin | Heat |
+| COMF | Comfort liner | Innermost | Abrasion on crew |
+| BOOT | Qualified EVA boot + convolute ankle | Feet | Walk / hop landing |
+| GLOVE | Multi-layer EVA glove (restraint + TMG analog) | Hands | Dexterity; DEA lives under this, not in ceramic |
+| BETA | Beta-cloth analog outer | Vacuum-side soft patches | AO / fire |
+| SEAL-R | Dual hatch / neck / wrist seals (qualified elastomer) | Disconnects | Pressure |
+
+---
+
+## 6. Joints and actuators
+
+| ID | Material / article | Where | Why |
+|---|---|---|---|
+| BRG | Space-rated rotary bearings (purchased LRU) | Shoulder, hip, waist, ankle as designed | Constant-volume motion |
+| CONV | Fabric / elastomer rolling convolute | Elbow, knee, waist | Soft DOF |
+| SEA-H | Rotary series-elastic actuator housing: Al or Ti + steel spring | Hip yoke, thigh longeron | Walk / kneel |
+| CSEA | Bowden / tendon + distal spring; steel or qualified synthetic line | Shoulder, elbow, ankle | Motors stay on dorsal pack |
+| CLU | Mechanical clutch / freewheel | Every powered joint | Fail-open |
+| SPR | Passive springs (steel or composite) | Shoulder gravity-balance, suit-torque cancel | Layer 0 |
+| DEA-SI | Space-adjacent silicone elastomer (Elastosil / PDMS class), not VHB acrylic | Interior glove / DEMES only | Soft goods in gas |
+| DEA-CNT | Encapsulated CNT electrode, pre-cleared | DEA faces | Self-clear; no carbon grease |
+| V-EBM | PI ~25 µm (or PTFE / Mylar / Parylene candidate) + metallization + thin anti-arc coat + 5 µm annular adhesive | Exterior plate latches, visor cap | Vacuum-gap zipper; inhibit in air |
+| HV-PI | Polyimide / PEEK bosses, 8 mm creepage | HV runs | V-EBM 4–6 kV |
+
+Forbidden as primary gait drive: open hydraulics, suit-O2 pneumatics, SMA on legs, V-EBM inside the bladder, DEA on the exterior.
+
+---
+
+## 7. Sternum cup — ABH-2600-SM only
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| CUP-CU | OFHC copper or TZM liner, 1.0–1.5 mm | Cup inner | Conduction |
+| CUP-TI | Ti-6Al-4V wall, 4–6 mm | Primary cup | Structure (default) |
+| CUP-IN | Inconel 718 wall, 4–6 mm | Alternate primary cup | Higher temp / bearing |
+| CUP-SG | S-glass / PI wrap, 2 mm | Cup outer | Electrical isolation |
+| CUP-W | W or W-Cu graded layer, 2–4 mm | Aft wall (crew side) only | Dose stand-off for SM analog |
+| CUP-PEEK | PEEK / PI stand-off bosses | HV / sense if any | Creepage |
+| CUP-QD | Stainless 4 mm coolant QDs | Cup jacket | Isolated from LCVG by HX |
+
+Cup forbids: hemp, unsealed ceramic chips, carbon grease, open hydraulics, any tube labeled “to Rs.”
+
+SM analog waste heat ≤ 150 W continuous / 400 W peak. 116 MW REAL-core flux is not this cup’s job.
+
+---
+
+## 8. Dorsal harness — FTL-BH-1 / DSH-1
+
+| ID | Material | Where | Why |
+|---|---|---|---|
+| DSH-TI | Ti-6Al-4V longerons | Pack structure | Load into hatch ring + yoke |
+| DSH-HY | S-glass / carbon hybrid pultrusions | Alternate longerons | Mass |
+| DSH-SK | CER-W / CER-B + HEMP + BK-SG | Pack skin | Same plate language as body |
+| DSH-HP | Copper or Al-6061 heat pipe, 12 mm | Sternum cup → dorsal radiator | 150–400 W SM path |
+| DSH-RAD | White LRSI-analog ceramic petals or fixed dorsal acreage | Heat reject | Not sized for 116 MW |
+| DSH-TK | Al-Li or Ti tanks, 2 × 1.5 L MK.I | Ice / GN₂ / peroxide coupon | Working fluid on the pack or bus — not a horizon feed |
+| DSH-LN | 6 mm stainless, bellowed at hatch | Fluid runs | No run across a plate bond |
+| DSH-BUS | 28 V harness, shielded | PWR-1 to cup | Dead-face on undock |
+| DSH-HV | PI-wrapped HV to V-EBM only | Latch bus | Vacuum interlock |
+
+Harness mass target ≤ 45 kg wet MK.I. Superluminal function is not a material in this list.
+
+---
+
+## 9. Fasteners, seals, adhesives, coatings (shop kit)
+
+| ID | Material | Use |
+|---|---|---|
+| BOLT-M8 | A286 or Ti-6Al-4V, captive | Sternum S1–S4 |
+| BOLT-PLSS | PLSS / SAFER-class dorsal set | Harness four-bolt |
+| RTV-B | Qualified silicone bond adhesive | Plate stack (process-owned thickness) |
+| FILM-AD | Epoxy or PI adhesive film | Backing co-cure / sandwich closeout |
+| COAT-B | Black high-temp glass | HRSI zones |
+| COAT-W | White silica + alumina | LRSI zones |
+| COAT-AO | AO / waterproof overcoat | After densify + coat |
+| DRY-BAG | Desiccant bag + barrier film | Hemp cores and finished plates in storage |
+| FILL | Qualified gap filler / overlapping scale seal | Plate-to-plate gaps |
+
+---
+
+## 10. Fluids (worn and pack)
+
+| ID | Fluid | Where | Note |
+|---|---|---|---|
+| H2O-L | Suit cooling water | LCVG | Isolated from cup by HX |
+| PGW | Propylene glycol–water | Cup / harness loop | SM analog only |
+| GN2 | Gaseous nitrogen | Case B hop coupon | 10–30 m/s class |
+| H2O2 | 90% peroxide (coupon only) | Case B alternate | Ground demo rules |
+| ICE | Water ice particulates | Pack / remote bus tanks | Working fluid or heat sink — not a feed to Rs |
+| LOX/LH2 | Depot hydrolox | Remote hopper bus only | Never between the scapulae on MK.I |
+
+No suit oxygen as actuator working fluid.
+
+---
+
+## 11. Explicit rejects
+
+| Do not put on the article | Why |
+|---|---|
+| Acrylic VHB as DEA dielectric | Creep, vacuum, cold, outgas |
+| Carbon grease electrodes | Vacuum / crew |
+| Open hydraulic plant in the garment | Leak = contamination |
+| Unclutched harmonic drive as sole joint path | Locked-joint fatality |
+| Hemp inside the sternum cup | Wrong job; wick + char |
+| Ceramic as bolt land | Brittle; isolate with SIP stack |
+| ABH-2600-REAL mass (1.75e12 kg) in the worn mass properties | Gravity / tide FAIL-CLOSED at sternum |
+| Any line that “terminates at Rs” | Horizon is 2.60 fm; ice cannot feed it |
+| FTL mechanism as a listed material | Not available under known physics; harness is structure + services |
+
+---
+
+## 12. Minimum coupon set (materials qualification)
+
+1. CER + ADH-F + HEMP/MAT-P + BK-SG — flatwise tension, thermal cycle, outgas
+2. Edge-sealed hemp core — vacuum bake + moisture regain
+3. S1–S4 doubler on HUT coupon — 2 × Case A proof
+4. Cup wall (CUP-TI or CUP-IN) + CUP-W aft — thermal + dose analog
+5. V-EBM PI pair — TVAC + Paschen sweep + inhibit
+6. DEA-SI + DEA-CNT — pre-clear + glove-finger TVAC
+7. SEA housing + CLU — fail-open demonstration
+
+Genealogy: every ceramic face, every hemp batch, every cup, every harness longeron gets a serial. Shuttle tile history is the warning.
