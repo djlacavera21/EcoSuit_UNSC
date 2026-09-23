@@ -1,0 +1,277 @@
+# EcoSuit MK.I — Manufacturing Process
+**Hemp-composite-core ceramic plate armor on an internal exoskeleton**
+
+Scope: from feedstock to a flight-like MK.I article. Process is written as a build sequence, not a brochure. Flight certification (NASA-STD-6001 / 6016, ECSS, etc.) is a parallel track, not implied by these steps.
+
+---
+
+## 0. Process architecture (how the factory is organized)
+
+| Cell | Output |
+|---|---|
+| A. Feedstock | Sized hemp fiber, ceramic slurry/powder, resins, metal/composite stock |
+| B. Ceramic faces | Sintered, coated, densified plate faces |
+| C. Hemp cores | Consolidated sandwich cores cut to segment net shape |
+| D. Plate bonding | Finished armor segments (face + core + backing) |
+| E. Exo frame | Lattice, yokes, longerons, joint housings |
+| F. Joints & actuators | Bearings, convolutes, optional powered modules |
+| G. Soft goods | Bladder, restraint, LCVG, seals, boots, gloves |
+| H. Integration | Rear-entry HUT analog, hatch, helmet, PLSS interfaces |
+| I. Finish & QA | Coatings, leak/proof, NDE, thermal/vacuum bake |
+
+Rule: ceramic never sees primary structural load. Frame is made first as the master datum. Plates are made to the frame, not the other way around.
+
+---
+
+## 1. Incoming materials
+
+### 1.1 Hemp
+- Bast fiber, decorticated, degummed, sized for composite use.
+- Forms: unidirectional tape, woven 2×2 / 4×4, and short-fiber mat for core fill.
+- Incoming tests: moisture (< specified bake-out limit), fiber length distribution, residual pectin/oil, batch ID.
+- Dry and bag immediately. Hemp is hygroscopic; treat it like prepreg, not like lumber.
+
+### 1.2 Ceramic face stock
+Two allowable routes (pick one per heat zone, not both on the same plate without a joint spec):
+
+**Route S — Shuttle-derived silica RSI analog**
+- High-purity amorphous silica fiber slurry (≥99% SiO₂ class).
+- Cast, microwave or furnace sinter, machine to net.
+- Density classes analogous to LI-900 (acreage) and LI-2200 / FRCI (high-load / high-abuse).
+
+**Route A — Thin ceramic armor face**
+- Alumina-silica or reaction-bonded ceramic sheet / tile, thinner than classic RSI, used where impact and abrasion dominate over pure insulation thickness.
+
+### 1.3 Matrix / adhesives
+- High-temp matrix for hemp core: phenolic, polyimide, or qualified ceramic-compatible resin. Epoxy only for ground demonstrators.
+- Face-to-core and core-to-backing: high-temp flexible adhesive family (RTV-class silicone descendants or equivalent space-rated flexible bond). Bondline thickness controlled (<0.25 mm typical target, process-owned).
+- All chemistries: outgassing, toxicity, flammability coupons before any manned article.
+
+### 1.4 Frame stock
+- S-glass / carbon hybrid prepreg, titanium or Al-Li fittings, 3D-printed high-temp thermoplastic tooling inserts (demonstrator) or machined metal (flight-like).
+- Fasteners: captive, captive-retained, vacuum-compatible.
+
+### 1.5 Coatings
+- Black high-temp borosilicate / glass coating for HRSI-equivalent zones.
+- White silica + alumina optical coating for LRSI-equivalent zones.
+- Waterproofing / AO-resistant overcoat after densification.
+- Visor: gold-amber thin-film stack on the slit optic only.
+
+---
+
+## 2. Master geometry
+
+1. Scan or generate the anthropometric manikin (two sizes minimum: small / large).
+2. Design the internal exo as the primary CAD master: spine, rib analog, pelvic yoke, scye, limb longerons, hatch ring.
+3. Split the outer surface into **segments** (chest plastron, L/R pauldron, upper arm, lower arm, abdomen, L/R thigh, L/R shin, boots, helmet faceplate). Do not manufacture the original sketch as 10,000 loose triangles.
+4. Apply the triangle facet pattern as **tooled surface language** on each segment (emboss, machine, or molded-in), not as separate parts.
+5. Release: frame STEP + plate outer mold line + bond tool models + hole patterns. Frozen datum is the frame.
+
+---
+
+## 3. Ceramic face manufacture
+
+### 3.1 Silica RSI analog (Route S)
+1. Slurry mix: silica fiber + binder + water, solids content locked by recipe.
+2. Cast into segment-shaped molds (not 6×6 squares). Thickness from heat map (thicker on ventral / re-entry analog zones).
+3. Dry under controlled humidity so the block does not crack.
+4. Sinter / microwave-fire to target density.
+5. CNC or 5-axis grind the inner mold line (IML) flat and the outer mold line (OML) to the facet pattern.
+6. **Densify the IML** (fill near-surface voids) so the bond does not see a weak, fluffy interface. This is the Shuttle lesson; do not skip it.
+7. Coat OML (black or white per zone). Fire / cure the coating.
+8. Waterproof / AO coat.
+9. NDE: tap test, mass, thickness map, coating crack inspect, edge chip spec.
+
+### 3.2 Thin ceramic face (Route A)
+1. Press or cast thin ceramic blank.
+2. Sinter.
+3. Grind OML facets and IML.
+4. Coat as above.
+5. Same NDE.
+
+Edge spec: chamfer or radius every free edge. Ceramic dies at sharp corners.
+
+---
+
+## 4. Hemp core manufacture
+
+Goal: a core that is light, damps impact, isolates strain, and presents two bondable faces.
+
+### 4.1 Ply book
+- Typical demonstrator stack (adjust after coupon program):
+  - Outer skins: woven hemp, 2–4 plies, fiber oriented to segment principal stress.
+  - Core: hemp mat / oriented hurd / or hemp-fiber honeycomb analog.
+  - Optional hybrid: one carbon or S-glass veil on the backing side for fastener bearing.
+- Fiber volume fraction owned by process (research band around ~30–40 wt% hemp is a starting point, not a flight number).
+
+### 4.2 Consolidation
+1. Dry fiber: oven bake-out, then dry bay only.
+2. Impregnate (prepreg or wet layup in sealed tool).
+3. Lay into a matched tool that already has the segment curvature.
+4. Vacuum bag + cure per matrix (phenolic needs its own ramp and post-cure).
+5. Demold. Trim to net with diamond or carbide tooling; hemp abrades tools.
+6. Face both sides (light skim) so bondlines are flat.
+7. Dry again. Bag with desiccant until bonding.
+
+### 4.3 Core coupons (gate, not optional)
+Every batch: density, thickness, flatwise tension, flatwise compression, shear, moisture regain, TGA/DSC, outgassing. No plate bonding until the batch coupon book is signed.
+
+---
+
+## 5. Backing and hard points
+
+1. Lay or machine the inner backing (thin composite sheet or metallic doubler).
+2. Co-cure or secondarily bond inserts: threaded hard points, locator pins, shear clips.
+3. Backing hole pattern is drilled to the **frame** drill jig, not to the ceramic.
+4. Edge seal the hemp (resin dam or foil/tape closeout) so vacuum and moisture cannot wick the core.
+
+---
+
+## 6. Segment bonding (the SIP analog)
+
+This is the Shuttle tile + Nomex pad + RTV stack, rewritten. 
+Ceramic face  — flexible adhesive Hemp core     — flexible adhesive Backing       — mechanical + adhesive to exo frame
+
+1. Plasma or approved abrasion of ceramic IML and core faces.
+2. Apply controlled-thickness adhesive (stencil or film).
+3. Assemble in a bonding fixture that holds OML contour and IML parallelism.
+4. Vacuum bag or press. Cure per adhesive spec.
+5. Post-bond inspect:
+   - Bondline thickness map (UT or witness coupons)
+   - Tap / thermography for voids
+   - Edge fillet continuity
+   - Mass
+6. Proof the segment in flatwise tension at a process knockdown of design load. Fail the bond, not the ceramic, on purpose during process development.
+
+**Do not** bond ceramic directly to the metal/composite frame. The hemp core is the strain isolator. That is the whole point.
+
+---
+
+## 7. Internal exoskeleton manufacture
+
+### 7.1 Lattice and yokes
+1. Cut / lay hybrid prepreg longerons and nodes, or machine Ti fittings and bond to composite tubes.
+2. Cure in hard tools referenced to the anthropometric master.
+3. Machine interface pads where segments land (flat, datumed).
+4. Install captive fasteners and alignment pins.
+5. Coat / anodize / paint metal; edge-seal composites.
+
+### 7.2 Joint housings
+- Shoulder, elbow, hip, knee, ankle: bearing seats and convolute attach rings machined as separate articles.
+- Bearings: purchased space-rated or demonstrator equivalents, installed with specified preload and seal.
+- Rolling convolutes: fabric/elastomer build on a mandrel, then trimmed to the housing.
+
+### 7.3 Optional powered modules
+- Actuator cans are separate LRUs. Wire/fluid pass-throughs are defined before first article, not after.
+- Demonstrator may use industrial servos; flight-like article needs vacuum, thermal, and EMI design from day one.
+
+### 7.4 Frame QA
+- Laser scan vs CAD.
+- Proof load the frame alone (no plates) in the design load cases: donning, 1g stand, fall, tool reaction, pressure (if the frame is part of the pressure path).
+- Only then release the frame as the plate-mount datum.
+
+---
+
+## 8. Helmet
+
+1. Faceplate: ceramic or ceramic-faced composite, same bond stack as body plates if heat-loaded; polycarbonate or similar only for the slit optic.
+2. Inner pressure visor / HUD ring: the original sketch’s concentric/spiral geometry lives here, behind the slit.
+3. Slit optic: bonded after faceplate coating. Gold-amber stack last.
+4. Neck ring / bearing: machined, seals installed, leak-checked as a subassembly before it ever sees the HUT.
+
+---
+
+## 9. Soft goods and pressure vessel
+
+Even an “Iron Man” hard suit still needs:
+
+- Comfort layer
+- Liquid cooling / ventilation garment
+- Bladder (urethane-coated fabric or equivalent)
+- Restraint layer
+- Wrist and waist disconnects
+- Gloves and boots as separate certified articles
+
+Build these on existing EMU / xEMU / Mark III process lines where possible. Do not invent a new bladder process unless the pressure architecture demands it.
+
+If the design is true hard-suit: HUT + brief are composite pressure vessels (S-glass or carbon, toughened epoxy or equivalent), rear hatch with dual seal, proof-tested before armor is hung.
+
+If the design is hybrid MCP + gas: document which segments are pressure-critical and which are only thermal/MMOD.
+
+---
+
+## 10. Integration sequence (order matters)
+
+1. Dress the manikin or subject stand-in with LCVG + bladder + restraint.
+2. Drop on the exo frame. Index with shoulder harness / hip yoke. Torque frame joints to spec.
+3. Hang armor segments from the inside out / top down:
+   - Pelvic yoke and abdomen
+   - Chest plastron
+   - Pauldrons
+   - Arms
+   - Thighs / shins / boots
+   - Helmet last
+4. Each segment: pin → seat → torque → gap/step measure (Shuttle tile discipline, human-scale).
+5. Fill gaps with qualified filler / overlapping scale seals.
+6. Route cooling, comms, power through defined frame channels. No wires trapped under ceramic.
+7. Install hatch, PLSS interfaces, relief valves, connectors.
+8. Full-suit leak check at incremental pressure.
+9. Proof pressure on the vessel (not on the ceramic).
+10. Functional joint ROM on a stand, then on a person.
+
+---
+
+## 11. Finishing
+
+- Touch-coat any coating holidays.
+- Serial-mark every segment and every frame node. Genealogy is mandatory; Shuttle tile history is the warning.
+- Photograph OML map (flat light + raking light) as the as-built baseline.
+- Bag the suit with desiccant if it will sit. Hemp cores do not get to drink shop air.
+
+---
+
+## 12. Test gates (minimum before calling it MK.I)
+
+| Gate | What | Pass sense |
+|---|---|---|
+| Coupon | Face / core / bond | Strength, thermal conductivity, outgassing |
+| Segment | One chest + one pauldron | Impact, flatwise tension, thermal cycle |
+| Joint | One live shoulder | ROM, leak, plate-to-plate clash |
+| Frame | Bare exo | Proof load, scan vs CAD |
+| Suit | Integrated article | Leak, proof, 1g mobility, thermal-vac bake, NDE after |
+
+Thermal-vac: cycle the suit, then re-tap and re-scan every plate. Look for bond lift and coating craze. That is how tiles actually fail.
+
+---
+
+## 13. Repair doctrine (build it in, or you will invent it in the field)
+
+- Segments are LRUs. Four fasteners + two pins, not a bonded-for-life tile field.
+- Spare cores and spare faces stocked as matched sets.
+- Field repair: swap segment. Depot repair: rebond core or recast face.
+- Never grind a cracked ceramic face and fly it. Replace.
+
+---
+
+## 14. Demonstrator vs flight-like (do not confuse them)
+
+**Ground MK.I demo (allowed shortcuts)**
+- Epoxy hemp cores
+- 3D-printed joint housings
+- Off-the-shelf bearings
+- Cosmetic ceramic coating on a non-RSI substrate
+
+**Flight-like MK.I (no shortcuts)**
+- Qualified matrix and adhesives
+- Real RSI or thin ceramic faces with densified IML
+- Space-rated bearings and seals
+- Full outgassing / flammability / toxicity book
+- Traceable fiber lots and cure charts
+
+Build the demo so the *interfaces* are already flight-like (hole patterns, gap/step, rear hatch, segment splits). Change materials later. Do not change the architecture later.
+
+---
+
+## 15. Shop traveler (one-line sequence)
+
+Hemp bake-out → core layup/cure → backing + inserts → ceramic cast/sinter/grind/coat/densify → face-core-backing bond → NDE + proof → frame layup/machine → joint install → frame proof → soft goods → frame on body → hang segments → gap/step → leak/proof → thermal-vac → serial book closeout.
