@@ -1,0 +1,201 @@
+# EcoSuit MK.I — Step-in process
+**Rear-entry hatch. You do not climb in through the neck. You step in, lock the hatch, then live.**
+Paper procedure. Assumes ASSY-CHEST, HUT, exo, plates, CUP-SM, and FTL-BH-1 / DSH-1 exist as separate LRUs already built.
+
+---
+
+## 0. What “step-in” means on this suit
+
+EcoSuit is a hard-shell HUT with an internal exo and overlapping ceramic-hemp plates. The pressure path is rear-entry, not waist-disconnect and not helmet-first.
+
+| Item | State for step-in |
+|---|---|
+| Rear hatch | Open, parked on the dorsal latch or suit-up stand |
+| Dorsal pack (FTL-BH-1 / DSH-1) | Off the hatch ring, or swung aside on the stand hinge |
+| Helmet | Off or hinged open. Never the entry hole |
+| Pauldrons / chest plates | On. They do not come off to don |
+| CUP-SM + cap | Installed. Cap on. No module swap during don |
+| SEAs | Clutch OPEN (free) |
+| V-EBM plate latches | Inhibited (air / dirty vac) |
+| DEAs | Off |
+| Bladder / LCVG | Crew wears LCVG. Bladder is in the suit |
+
+You step backward or sideways onto the stand, feet into the legs, hips into the yoke, arms into the sleeves, back through the hatch opening. Hatch closes onto the ring. Pack goes on last.
+
+---
+
+## 1. Hardware that makes step-in possible
+
+Build these before you write a donning card.
+
+1. **Rear hatch ring** on the HUT — dual seal, four pack bolts, Datum C.
+2. **Hatch door** — swings up or aside on the stand; does not dangle on plates.
+3. **Suit-up stand** — holds the suit at 15–25° aft lean, hatch at scapula height, feet free of the floor by ~50–80 mm so the crew does not fight 1 g fabric.
+4. **Leg tunnels** — open enough for a booted LCVG foot without scraping the knee convolute.
+5. **Yoke** — pelvic ring is the seat. Crew sits into it, they do not hang from the hatch.
+6. **Sleeve line** — arms go in after hips are seated, or the hatch lip skins the deltoid.
+7. **Pack hinge or trolley** — FTL-BH-1 never manhandled across a ceramic facet.
+8. **Dead-face** — pack off = PWR-1 and HV open, COOL QDs shut.
+
+If the stand is missing, you do not have a step-in suit. You have a costume people fall out of.
+
+---
+
+## 2. Pre-don states (T-20 min)
+
+| Check | Pass |
+|---|---|
+| Suit on stand, hatch open, pack off or swung | Visual |
+| Internal exo clear, no tools in the yoke | Visual |
+| SEA clutches OPEN, brakes off | Indicator + hand-backdrive |
+| V-EBM HV inhibit | Lamp / breaker open |
+| CUP-SM cap on, no service lines hanging into the bore | Visual |
+| LCVG on crew, dry, comms cap or bio harness as spec | Crew |
+| Bladder dry, no fold across the hatch land | Visual |
+| Plate family serial matches traveler | Tag |
+| Helmet and gloves staged, not in the hatch path | Staged |
+| Loop fluids filled, but pack not mated | QD caps on |
+
+Do not start step-in with a powered knee. A closing SEA during don is a broken femur.
+
+---
+
+## 3. Step-in sequence (1 g stand)
+
+Count is one crew + one suit tech. IVA can drop the tech if the stand is vehicle-mounted and the hatch is overhead.
+
+### 3.1 Feet
+1. Crew stands on the step plate behind the suit.
+2. Left foot into left leg tunnel, toes pointed, knee slightly flexed.
+3. Right foot.
+4. Do not lock the ankle convolute yet. Boots find the footbed.
+
+### 3.2 Hips
+5. Sit back into the pelvic yoke. Weight goes into EXO-TI / EXO-SG, not into a chest plate.
+6. Tech confirms the yoke has the iliac crest, not the lumbar hanging on the hatch lip.
+7. Close any waist restraint that is *not* the pressure seal.
+
+### 3.3 Arms
+8. Left arm through the sleeve. Shoulder SEA free.
+9. Right arm.
+10. Hands find the glove disconnects but gloves stay off until hatch is sealed (or per vehicle card — pick one and freeze it).
+
+### 3.4 Spine and hatch
+11. Crew leans forward onto the HUT. Sternum cup faces Datum A. No shove on CAP-S.
+12. Tech swings the hatch. Dual seals on the ring. No fabric in the land.
+13. Hatch latches: mechanical first, then witness.
+14. Pressure check of the hatch cavity per vehicle card (or leave for cabin pump later — freeze one).
+
+### 3.5 Pack
+15. Swing / trolley FTL-BH-1 onto the four hatch bolts.
+16. Torque star pattern. Witness.
+17. Mate COOL QDs, then PWR-1, then TM. HV stays inhibited until vacuum interlock.
+18. Heat-pipe stub to the chest cup seated.
+
+### 3.6 Head, hands, power-up
+19. Helmet on neck ring. Lock. Visor per card.
+20. Gloves on.
+21. Comms / bio check.
+22. SEA power: still OPEN until the crew says they are planted.
+23. Brief impedance check on a stand, 1 g, no tools.
+24. V-EBM remains inhibited until a gauge says hard vacuum.
+
+Step-in is over when hatch + pack + helmet + gloves are locked and the crew can stand off the step plate without the suit walking away from them.
+
+---
+
+## 4. Vehicle / pad variant
+
+Same suit, different stand:
+
+- Suit lives in a donning booth or on a vehicle wall with the hatch facing the aisle.
+- Pack may already be on the hatch if the vehicle card allows a side-entry around a parked pack. Default MK.I is pack-last. Do not invent a third way mid-campaign.
+- Abort-worn Case A: hatch stays locked, pack stays on, SEAs OPEN or HOLD as the abort card says, never impedance-follow a 6 g spike.
+
+Lunar gravity step-in is the same sequence with less stand lean. Do not skip the yoke sit — 1/6 g still lets you miss the footbed and fold a knee convolute.
+
+---
+
+## 5. Step-out (reverse, with two extra rules)
+
+1. SEAs OPEN. Confirm backdrive.
+2. HV inhibit. Cap latches passive.
+3. Gloves off, helmet off.
+4. Pack dead-face, QDs, unbolt, swing aside.
+5. Hatch open.
+6. Arms out, then stand up out of the yoke, then feet.
+7. Crew never pulls themselves out by a chest plate or the sternum cap.
+8. If the cup over-temp or dose flag is set, pack and hatch as normal, then treat the SM as a hot LRU on the stand — do not yank CAP-S with a bare hand because the card said “90 s.”
+
+---
+
+## 6. What must already be true of the chest article
+
+From the chest-plate traveler, step-in inherits:
+
+- Plates stay on during don. No “remove plastron to enter.”
+- Cup stays in. No module swap mid-don.
+- Coolant and power run along superior longerons to the hatch, not across a plate bond, so the pack can mate without flexing a sandwich.
+- Spider takes Case A. The crew sitting into the yoke is a nothing-load compared with 6 g, but only if they sit into the yoke.
+
+If any of those is false, stop. You are not stepping into EcoSuit. You are climbing into a broken dummy.
+
+---
+
+## 7. Timing gates (acceptance)
+
+| Action | Gate |
+|---|---|
+| Feet to seated in yoke | ≤ 30 s, no binding |
+| Arms in | ≤ 20 s |
+| Hatch close + latch | ≤ 20 s |
+| Pack on + QDs + PWR-1 | ≤ 90 s |
+| Helmet + gloves | ≤ 60 s |
+| Full step-in, 1 g, two-person | ≤ 4 min first article; tighten later |
+| Emergency hatch open + pack dead-face | ≤ 30 s |
+
+If the crew needs a third person to aim a foot, the stand angle or the leg tunnel is wrong. Do not “train through” a geometry fault.
+
+---
+
+## 8. Inhibits during step-in (non-negotiable)
+
+| System | During step-in | After lock, still in air | After vacuum interlock |
+|---|---|---|---|
+| SEA | OPEN | OPEN or HOLD | Impedance when the card says walk |
+| V-EBM | HV off | HV off | Armed only if gauge is hard-vac |
+| DEA | Off | Off | Off until glove card |
+| PWR-1 to cup | Unmated until pack is on | On if loop is up | On |
+| PWR-HV | Open | Open | Per latch card |
+| Real ABH-2600 | Not in the suit | Not in the suit | Not in the suit |
+
+---
+
+## 9. Failure modes this procedure exists to prevent
+
+| Failure | Cause | Result |
+|---|---|---|
+| Entry through the neck | Treating it like a soft suit | Torn bladder, smashed visor |
+| SEA powered | “Help the crew in” | Locked joint, injury |
+| Pack dragged over tiles | No trolley | Chipped CER-B, scrap plate |
+| Weight on CAP-S | Crew leans on the artwork | Cup land crush, hemp bore exposed |
+| Fabric in hatch land | Rushed close | Leak you find at 3 psi |
+| HV on in the booth | “Test the latches” | Paschen / shock |
+| Step-in without a stand | Heroics | Missed footbed, convolute damage |
+| REAL-core in the cup | Wrong object | Tide / g FAIL-CLOSED — not a donning issue, a design crime |
+
+---
+
+## 10. First-article donning test
+
+1. Dummy HUT + chest article + one leg pair + hatch + pack mass analog.
+2. Two subjects, three runs each, 1 g stand.
+3. Record times, hang-ups, plate contact, hatch-seal debris.
+4. One run with SEA “accidentally” armed — confirm the card stops the run.
+5. Freeze stand angle, tunnel trim, and pack-last order before a full suit set.
+
+Title block:
+- Step-in is rear hatch, pack last, SEAs open.
+- Chest plates and CUP-SM stay on.
+- FTL-BH-1 is the dorsal service pack, not an entry hatch.
+- ABH-2600-SM only. ABH-2600-REAL is not worn.
