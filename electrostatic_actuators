@@ -1,0 +1,173 @@
+# EcoSuit MK.I — Vacuum-Gap Electrostatic Actuators
+**V-EMS / V-EBM · plate latches, visors, deployables — not gait motors**
+
+Vacuum-gap electrostatic actuators flip the usual space-hardware complaint. Motors overheat because vacuum will not convect. Oils freeze or outgas. Dielectric-elastomer stacks want soft polymers that are not on the materials list. These devices treat the vacuum itself as the dielectric and as the moving volume.
+
+Primary source: Sîrbu, Mazzotta, Fontana et al., Nature Communications 16:11414 (2025). Family name **V-EMS**. Building block **V-EBM** (vacuum electro-bonded membrane).
+
+---
+
+## 1. How they work
+
+Two metallized polymer films sit face to face, bonded only at a rim. In vacuum the pocket between them is empty. An external tension opens that pocket into a wedge: gap ≈ 0 at one edge, large at the other.
+
+Apply kilovolts. Opposite charges on the two electrodes pull the films together. Attraction is strongest where the gap is already smallest, so a **zip front** runs across the cell and the pocket collapses. The cell shortens. Drop the voltage and the preload opens it again.
+
+That kinematics is the same family as electrostatic zippers and HASEL pouches on Earth — except the “fluid” is vacuum, so there is nothing to boil, freeze, leak, or viscously resist the collapse.
+
+Why vacuum is the point, not a nuisance:
+- Very high dielectric strength once past the Paschen minimum
+- Essentially zero conductivity
+- Zero viscosity, so the gap can slam shut
+- No liquid dielectric to qualify, contain, or outgas
+
+Electrostatic pressure scales as:
+
+    p = 1/2 · ε0 · εr · E²
+
+In the zipped zone, E is set by the polymer thickness (tens of microns), not by the open gap. That is how a floppy film pair produces newtons instead of millinewtons.
+
+---
+
+## 2. What has actually been built
+
+| Metric | Demonstrated |
+|---|---|
+| Mass (optimized unit) | 0.7 g (~1/9 of an equivalent liquid-gap EBM) |
+| Blocked force | >4 N; ~4.25 N at 6 kV, ~3 N at 5 kV, ~2.2 N at 4 kV |
+| Stroke | ~1 mm on the light unit; up to 3.6 mm on a 3-unit stack at 1 N preload |
+| Contraction | ~40% (light unit), approaching ~50% on the stack at low preload |
+| Bandwidth | >100 Hz |
+| Peak specific power | 1.4 kW/kg |
+| Drive | 4–6 kV; current is tiny |
+| Environment | 5×10⁻⁵ to 10⁻⁶ mbar in the paper; still works down to ~10⁻² mbar; dies above that |
+| Atmosphere | Does not work in air |
+| Materials | Polyimide films (~25 µm), space-grade polymers, thin anti-arc coating |
+| Other dielectric candidates | PTFE, Mylar, nylon, Parylene |
+| Cycle life (supporting work) | >5×10⁵ cycles |
+| Environment coupons | Dielectric strength held through ~145 °C and high gamma dose |
+| Demo article | Small vacuum gripper, not a walking robot |
+
+A three-unit stack is mechanically in series (stroke adds) and electrically in parallel (one HV bus).
+
+Unit stack-up:
+- Rigid ring frame
+- Two PI films (~25 µm)
+- ~5 µm annular adhesive
+- Compliant electrodes
+- Thin insulating overcoat (cuts vacuum-arc rate on fast edges)
+- Gas outlet so the pocket equalizes to chamber vacuum
+
+---
+
+## 3. Family tree
+
+| Relative | Gap dielectric | Needs vacuum? | Works in air? | Typical issue |
+|---|---|---|---|---|
+| DEA (dielectric elastomer) | Stretchy rubber | No | Yes | Breakdown; few space-grade elastomers |
+| HASEL / liquid zipper | Oil / dielectric fluid | No | Yes | Fluid fails or freezes in vacuum |
+| Air-gap zipper | Air | No | Yes, with care | Paschen / corona at kV |
+| **V-EBM / V-EMS** | **Vacuum** | **Yes** | **No** | Dead in atmosphere and in dirty vacuum |
+| Comb / inchworm electrostatics | Air or vacuum | Sometimes | Sometimes | Tiny force; lithography-scale |
+
+V-EBMs are not DEAs with the rubber deleted. DEAs need the elastomer to strain. V-EBMs need the gap to disappear. Different physics, different materials list, opposite atmosphere requirement.
+
+---
+
+## 4. Constraints that matter more than W/kg
+
+### Paschen, not vacuum, is the enemy
+High vacuum is safe. Cabin air is safe for these parts only because they will not run. The dangerous band is rough / medium vacuum — airlock pump-down, a leaking PLSS bay, ascent. Above ~10⁻² mbar the residual gas ionizes and the cell stops or arcs.
+
+Design rule: inhibit the HV supply unless a gauge says the environment is hard enough.
+
+### They do not work inside the pressure garment
+The EcoSuit interior is ~3–8 psi of gas. That is the wrong dielectric. Sealing a vacuum pouch and calling it the same actuator reinvented a HASEL and lost the vacuum advantage. V-EBMs belong on the vacuum side of the ceramic.
+
+### Force is real. Stroke is short. Gait torque is not there yet
+4 N at 1 mm is 4 mJ per stroke. A knee wanting 30–40 N·m through 1 rad wants tens of joules and a long lever. Stacking cells and adding linkage builds a linear muscle tape, not a hip SEA. Treat them as mechanisms, not walk motors.
+
+### Kilovolts next to a human
+Current is low, so stored energy can be small, but 6 kV on the outside of a suit still wants:
+- potting
+- creepage distance
+- bleed-down resistors
+- hard inhibit tied to hatch / airlock state
+
+Polarity reversal is already used to fight interfacial charge-up. That drive waveform lives in the PLSS electronics, not as an afterthought.
+
+### Charge dynamics
+Multilayer electrostatic stacks accumulate interface charge and force sags under DC. Liquid-gap cousins need dielectric matching or AC inversion. Vacuum-gap parts still need a drive strategy (the paper used alternating polarity). Long holds (a latch left closed for six hours) are a materials-and-drive problem, not a solved one.
+
+### Dust
+A zip front is two films kissing. Lunar or Martian fines in that interface are a short, a puncture, or a stuck cell. External EcoSuit use means covers, labyrinths, or cells that live under a plate until they fire.
+
+### Not backdrivable in the SEA sense
+Off: two floppy films plus whatever spring the frame gives you.
+On: they clamp.
+That is a latch personality, not an impedance-control personality.
+
+---
+
+## 5. EcoSuit assignment
+
+Keep Layer 0–2 of the exo (springs, SEAs, cable-SEAs) for gait and tools. Give V-EBMs the jobs that are short-stroke, high-speed, vacuum-side, and allowed to be binary.
+
+| Use | Why it fits | Why it is not a stretch |
+|---|---|---|
+| Plate segment latches | 4 N pulls a pin or closes a scale; 1 mm is a latch stroke; stack for redundancy | Armor that opens is the Iron Man read |
+| Helmet visor / slit cover | Fast, light, no lubricant | kV packaging in the helmet ring |
+| Rear-hatch secondary catch | Vacuum-side only | Must inhibit in the airlock |
+| Dust cover / sensor door | High bandwidth, low mass | Dust-tolerant cover over the cell itself |
+| External tool-release / sample-bag deploy | Gripper already shown | Not finger flexion inside the bladder |
+| Antenna / cover deploy | Classic spacecraft mechanism replacement | Already the paper’s intended market |
+
+**Do not use in MK.I as:**
+- Hip, knee, or elbow primary drive
+- Anything inside the bladder / cabin
+- Uninhibited operation during airlock cycle
+
+---
+
+## 6. MK.I coupon (the actual next article)
+
+One pauldron segment whose open/lock is a 3- to 10-cell V-EBM tape behind the ceramic, firing only after a vacuum interlock.
+
+That is a real article.
+A vacuum-gap walking joint is a research program.
+
+---
+
+## 7. How to make them (factory notes)
+
+1. Space-grade PI (or PTFE / Mylar) film, ~25 µm, metallize one face.
+2. Pattern electrodes. Leave a creepage margin at the rim.
+3. Bond two films on an annular adhesive (~5 µm) to a rigid ring frame. Leave a gas outlet so the pocket can equalize to chamber vacuum.
+4. Apply the thin insulating overcoat that cut arcing in the paper.
+5. Stack: mechanical series for stroke, electrical parallel for one HV line.
+6. Pot the HV feedthrough. Add a bleed resistor and a pressure-switch inhibit.
+7. Qualify as a mechanism, not as a motor:
+   - thermal-vac
+   - TVAC arc / Paschen sweep
+   - ~145 °C class
+   - radiation coupon
+   - dust
+   - cycle life
+   - suit-latch load case
+
+Outgassing and NASA-STD-6001 still apply. The selling point is that the moving dielectric is vacuum, so the materials can be the same Kapton / Teflon / Mylar already in the harness book.
+
+---
+
+## 8. Split with the rest of the suit
+
+| Layer | Hardware | Job |
+|---|---|---|
+| 0 | Springs, clutches | Cancel suit hysteresis; fail-open |
+| 1 | Rotary SEAs at hip / knee | Walk, kneel |
+| 2 | Cable-SEAs from the dorsal lattice | Shoulder, elbow, ankle |
+| 3 | Tendon / SMA / PAM | Glove |
+| **V-EBM** | **Vacuum-gap cells on the exterior** | **Move the plates** |
+
+SEAs and cables move the human.
+Vacuum-gap cells move the plates.
