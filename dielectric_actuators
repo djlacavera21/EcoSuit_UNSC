@@ -1,0 +1,93 @@
+# EcoSuit MK.I — Dielectric Elastomer Actuators (DEA)
+
+## What they are
+A soft capacitor that moves. Two compliant electrodes on a thin elastomer.
+Voltage → Maxwell stress squeezes thickness → incompressible rubber expands in plane.
+Packaging (stacks, rolls, DEMES) is how you turn that squeeze into a useful stroke.
+
+p = ε E² = ε (V / t)²
+et ≈ −ε E² / Y
+Figure of merit: ε / Y. Limiters: breakdown, electromechanical snap-through, electrode failure.
+
+## Published performance band
+- Useful device strain: 10–50%
+- Coupon acrylic area strain: 100–380% with pre-stretch
+- Stress: ~100 kPa typical silicone; higher for pre-stretched acrylic
+- Energy density: ~0.01–3 MJ/m³ (chemistry-dependent)
+- Fields: ~70–400 V/µm → kilovolts unless films are tens of microns
+- Commercial stacked SDEA example: ~30 N isometric at ~1.2 kV; ~1.6 mm in tens of ms
+- Lab stacks: 100 layers published; 1000-layer lab articles exist
+
+## Materials
+| Family | Strength | Space problem |
+|---|---|---|
+| Acrylic (VHB) | Huge strain after pre-stretch | Creep, humidity, outgas, cold, slow |
+| Silicone (PDMS / Elastosil / Sylgard) | Faster, wider T, less creep | Lower raw strain; still an elastomer to qualify |
+| PU / filled composites | Tunable ε and modulus | Fillers raise stiffness or make leak paths |
+
+Flight-adjacent work uses silicone, not VHB.
+
+## Electrodes
+Must stretch, conduct, and not seed punctures.
+- Lab: carbon grease — reject for vacuum / suit
+- Flight-ish: carbon black, CNT mats, conductive silicone
+- CNT self-clearing: pinhole flash isolates the fault
+- Failure: high-frequency bipolar drive can shake CNTs off silicone
+- Process: encapsulation + adaptive pre-clearing after build
+
+## Architectures
+- Planar membrane — needs a frame if pre-stretched
+- DEMES — film on a flex frame; voltage flattens a curl (hatch petal / visor lid in gas)
+- Rolled — linear muscle
+- Multilayer stack / SDEA — only honest force format; yield is the product
+- HASEL — Maxwell stress + liquid pouch. Do not put the liquid in the EcoSuit pressure loop.
+
+DEAs work in air. That is the largest difference from V-EBMs.
+
+## Space evidence (real, not brochure)
+- ESA silicone EAP pads on a thruster-pointing demo: TVAC changed stroke via outgassing/moisture (partial recover); ~1.1 kGy Co-60 did not statistically kill stroke
+- Stratospheric balloon silicone DEA grippers: 23.6 km, ~0.05 atm, −55 °C
+- Carbon-grease electrodes already abandoned in the better vacuum papers
+- Not real: flight-qualified stacked DEA on a spacesuit gait joint
+
+## Failure modes
+- Weibull breakdown (one defect in a large area wins)
+- Electromechanical instability / pull-in
+- Electrode delamination or CNT loss
+- Leakage → heat → more leakage
+- Acrylic viscoelastic drift
+- Moisture / outgassing changing t and ε
+- UV on exposed organics
+
+## Comparison
+
+| | DEA | V-EBM | Rotary / cable SEA |
+|---|---|---|---|
+| Cabin air | Yes | No | Yes |
+| Hard vacuum | Maybe (silicone, dry electrodes) | Yes | Yes, with vac lube |
+| Strain | Large | ~40% of a short cell | Gear / cable geometry |
+| Force per cell | Tens of N in stacks | ~4 N @ 6 kV, 0.7 g | Joint-scale N·m |
+| Drive | ~0.8–6 kV | 4–6 kV | Low-voltage bus |
+| EcoSuit home | Inside, soft goods | Outside, plates | Frame, gait / tools |
+
+## EcoSuit assignment
+USE
+- Glove / finger assist under the bladder (stacked or rolled silicone, CNT electrodes)
+- Wrist / elbow padding assist (DEMES or thin stack)
+- Interior hatch petal, LCVG haptics, IVA covers
+
+DO NOT USE
+- Hip or knee as primary walk muscle
+- Acrylic VHB in vacuum, cold, or on crew
+- Carbon grease
+- Uninhibited HV in a wet glove
+- Exterior plate latches (that is V-EBM territory)
+
+## MK.I coupon
+One finger of a pressurized glove: 20–50 layer silicone stack, CNT electrodes, encapsulation, pre-cleared, leak-checked, then thermal-vac as a glove.
+If it lives, DEAs earn a slot. If it punches through on cycle 800, they stay in the lab.
+
+## Split
+SEAs + cables move the skeleton.
+V-EBMs move the ceramic plates in vacuum.
+Silicone DEAs move flesh-adjacent soft goods in gas.
