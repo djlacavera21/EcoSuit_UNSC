@@ -1,0 +1,186 @@
+# EcoSuit-AS — Asteroid-superalloy plate derivative
+**Feedstock: main-belt M / S / C bodies (Mars–Jupiter)**
+**Same suit architecture: rear-entry HUT, internal exo, step-in, CUP-SM analog, dorsal pack**
+**New OML: mined Fe–Ni (and upgraded superalloy), not Shuttle-tile ceramic**
+
+Paper growth article. Not a Psyche claim ticket and not a method to refine a horizon.
+
+---
+
+## 0. Split from EcoSuit MK.I
+
+| | EcoSuit MK.I | EcoSuit-AS |
+|---|---|---|
+| Where the plates are born | Earth kiln + hemp shop | Belt melt / roll / HIP, or Earth shop using returned metal |
+| OML | Silica / alumina ceramic, black/white coats | Fe–Ni to Ni-base superalloy faces |
+| Core | Hemp / PI sandwich (SIP) | Grade-dependent: hemp kept, or metal foam / honeycomb |
+| Why | Strain isolation under brittle TPS | Ductile metal can take bearing; isolation still wins on fatigue |
+| First use | LEO / lunar worn article | Belt yard, Mars transfer, long EVA on metal-rich bodies |
+
+Do not scrap the hemp traveler. AS Grade A can still hang on the same spider. Grade C does not need hemp for strain; it may still want a thermal break.
+
+---
+
+## 1. What the belt actually gives you
+
+Three spectral families. You mine a mix, not a logo. [[171]](grok://citation?card_id=d8552e&card_type=citation_card&type=render_inline_citation&citation_id=171)
+
+| Class | Fraction / role | What you pull |
+|---|---|---|
+| C-type | Most of the belt | Hydrated silicates, organics, C, some water, modest metal |
+| S-type | Common | Silicates + native Fe–Ni, Co, traces of Au / PGM |
+| M-type | ~5% of classified | Fe–Ni metal, FeS, silicates; radar-bright, not solid iron |
+
+(16) Psyche is the headline M-type. Density ~3.4–4.2 g/cm³ vs ~7.9 for solid kamacite. Best current read: mixed metal + silicate ± porosity, on the order of **~30–60 vol% metal**, not a polished core you slice into pauldron stock. Surface mixes in the literature run metal-rich with low-Fe pyroxene and exogenous carbonaceous junk. Plan on slag and silicates in every heat. [[172]](grok://citation?card_id=200462&card_type=citation_card&type=render_inline_citation&citation_id=172)
+
+Iron-meteorite analog (the workable assay):
+
+| Element | Typical | Superalloy need |
+|---|---|---|
+| Fe | ~90 wt% | Matrix or leftover |
+| Ni | **5–10 wt%** (range 4–60) | Inconel-class wants **~50–55%** |
+| Co | 0.3–1.3 wt% | Useful (Haynes / some Ni alloys) |
+| P | 0.1–0.5 wt% | Slag or embrittler — control it |
+| S | 0.1–2 wt% as FeS / troilite | Slag. Kills hot work if left in |
+| Cr | ppm–0.2 wt% | Inconel 718 wants **~19–21%** |
+| Mo | ~3–30 ppm | 718 wants **~3%** |
+| Ti | ~ppm | 718 wants **~1%** |
+| Al | not a native metal phase | 718 wants **~0.5%** |
+| Nb | not available | 718 wants **~5%** |
+| PGM (Pt, Ir, Ru…) | ~6–230 ppm in irons | Catalyst / coupon, not plate alloy |
+
+So: belt metal is **kamacite / taenite Fe–5–11Ni**, as-cast yield ~260–440 MPa, ductility falling as Ni rises. That is habitat plate. It is not γ′ nickel superalloy until you add Cr, Al, Ti, Mo, Nb from somewhere else. [[188]](grok://citation?card_id=49d761&card_type=citation_card&type=render_inline_citation&citation_id=188)
+
+---
+
+## 2. Three plate grades (freeze these names)
+
+### Grade A — Meteoritic plate (first article)
+**Alloy:** Fe–(5–8)Ni after melt + slag (P, S, silicates out). Optional 0.2–0.5% C if you have a C-type carbon dump and want a steel, not a stainless.
+
+**Process:** collect → crush → magnetic / density split → melt → slag FeS + phosphide + silicate → deoxidize → cast slab → hot roll / stamp facets → age or leave as-cast → passivate.
+
+**Plate:** 1.2–2.5 mm face, faceted Iron Man language, overlapping scales.
+**Core:** keep MK.I hemp / PI, 6–10 mm, ADH-F analog rated for metal IML (not ceramic densify).
+**Why hemp stays:** rolled FeNi still prints welds and thermal strain into a HUT. SIP is still cheap.
+
+**Use:** belt-yard EVA, unpressurized cover, first worn metal set.
+**Not for:** 1500 °C leading edge. This is structural metal, not HRSI.
+
+### Grade B — Belt stainless / Fe–Ni superalloy-adjacent
+**Alloy target:** Fe–18Cr–8Ni class **or** Fe–Ni + Cr + small Mo, if and only if Cr is imported or extracted from S-type chromite-bearing silicates (hard, low yield).
+
+**Process:** Grade A melt + alloy addition + AOD/VOD analog in vacuum + roll + solution treat + optional light cold work.
+
+**Plate:** 1.0–2.0 mm.
+**Core:** hemp still legal; metal honeycomb from the same FeNi is the growth core.
+
+**Use:** long-life vacuum OML, hatch ring skins, pack skins, cup outer jacket instead of Inconel-from-Earth.
+
+### Grade C — Ni-base superalloy face (true “superalloy plate”)
+**Alloy target:** 718-class or simpler solid-solution Ni–Cr (600-class) if Nb is unavailable.
+
+**Feed math (honest):** to put 55% Ni in the plate you either
+- concentrate Ni from many tonnes of 7% Ni metal (Mond / carbonyl or vacuum refining), or
+- import Ni-rich taenite separates (20–65% Ni phases exist in irons — tetrataenite / taenite — and can be sorted).
+
+Cr, Al, Ti, Mo, Nb are **alloying imports** unless a separate silicate / pallasite / Earth tanker exists. Do not write “Psyche = 718” on a drawing.
+
+**Plate:** 0.8–1.5 mm face, possible thermal-barrier coat (silicate from C/S slag, not Shuttle tile).
+**Core:** Ni foam or FeNi honeycomb. Hemp optional as thermal break only.
+**Use:** hot nozzles on Case C hopper, cup wall, hatch ring, anywhere MK.I already called Inconel 718.
+
+---
+
+## 3. Architecture on the body
+
+Same datums as MK.I chest traveler (A HUT sternum, B sagital, C hatch).
+OML facet (Grade A/B/C metal) → bond primer / flexible isolator (or braze land on Grade C) → core (hemp Grade A/B, metal foam Grade C) → backing (S-glass or FeNi sheet) → Ti / FeNi doubler + inserts → HUT / spider
+
+Changes from ceramic MK.I:
+
+| Item | Ceramic MK.I | AS |
+|---|---|---|
+| Face thickness | 2.5–4 mm ceramic | 0.8–2.5 mm metal |
+| Densified IML | Required | Replaced by grit + primer or nickel strike |
+| Edge | Chamfer ceramic | Hem / laser-weld scale overlap |
+| Fastener land | Never in face | Still never in thin face — doubler only |
+| V-EBM | Bonds to ceramic back | Bonds to metal back; watch creepage |
+| Repair | Scrap the tile | Weld / patch a scale |
+| Thermal | Face is the TPS | Face needs coating or it is a radiator |
+
+Sternum cup: Grade C wall is the point of the derivative. CUP-IN becomes belt-melt 718-analog or FeNi + imported Cr. CAP-S becomes a metal cap with the same 118 / 72 mm envelope. Hemp still stops at the sealed land.
+
+---
+
+## 4. Mine-to-plate process (belt yard)
+prospect (radar albedo + sample assay) → anchor / bag / cut → crush to < 10 mm → magnetic drum + eddy + density ├─ FeNi metal   → melt stream ├─ FeS / schreibersite → slag / P-control ├─ silicate     → slag, oxygen, possible Cr/Mg later └─ C-type fines → carbon, water if any, organics → vacuum or inert melt → slag + deox → (Grade B/C) alloy additions → cast slab or atomize → roll / stamp / HIP / AM → heat treat → facet machine + overlap hem → coat (passivate / TBC) → serial + NDE → ship to suit shop (same bond traveler as MK.I, metal primers)
+Mond / carbonyl Ni is the historical way to pull nickel out of FeNi as a gas and drop it as powder. That is how you climb from 7% Ni toward Grade C without pretending the asteroid was already 718. It is a plant, not a backpack.
+
+Energy: melt heat is the yard’s problem. A worn suit does not smelt.
+
+---
+
+## 5. Plate manufacturing (suit shop, Grade A first article)
+
+1. Receive serialized slab or coil. Assay Ni, Co, P, S, C. Reject high S.
+2. Roll to face gauge. Facet-stamp or laser-cut triangles to the MK.I pattern language.
+3. Hem or joggle the overlap (Iron Man scale, not tile step).
+4. Grit IML. Nickel strike if you are bonding hemp + ADH-F.
+5. Core: same hemp traveler as MK.I (moisture gates, edge seal, no hemp in the cup bore).
+6. Backing: BK-SG or a 0.5 mm FeNi sheet from the same heat.
+7. Doubler: FeNi or leftover Earth Ti. S1–S4 from the same jig.
+8. Bond or mechanical stand-off. Metal faces can take more peel than ceramic — still keep a flexible line if the core is hemp.
+9. NDE: dye, UT, conductivity map (Widmanstätten leftover is a feature, not a crack — learn the difference).
+10. Serial AS-PLT-CHEST-xxx to heat number.
+
+First article: three-facet plastron + one scale, Grade A, hemp core, dummy HUT, 2 × Case A on the spider.
+
+---
+
+## 6. What the superalloy actually buys
+
+| Load | Ceramic MK.I | Grade A FeNi | Grade C Ni-base |
+|---|---|---|---|
+| 6 g Case A | Face is passenger | Face can take some in-plane | Face + cup are structure |
+| Micrometeoroid | Ceramic shatter / plug | Ductile dish, weld repair | Better |
+| Re-entry plasma | Designed for it | Melts | Melts unless coated and the trajectory is not Earth peak heating |
+| Belt EVA cold | Fine | Fine; watch DBTT on low-Ni heats | Fine |
+| Hot hopper plume | Keep off hemp | Keep off hemp | Legal on yoke nozzles |
+| Mass at equal stiffness | Light face, thick core | Heavier face | Heavier still unless thinned |
+
+Earth→Moon stress test does not change. Metal plates do not give you 15 km/s. They give you a plate you can weld in a yard 4 AU out.
+
+---
+
+## 7. Materials list addendum (AS only)
+
+| ID | Material | Source |
+|---|---|---|
+| FE-A | Fe–(5–8)Ni, slagged, rolled | M-type / iron-meteorite analog |
+| FE-B | Fe–Ni–Cr stainless analog | FE-A + Cr import or silicate extract |
+| NI-C | Ni-base 600/718 analog | Taenite / carbonyl Ni + Cr,Al,Ti,Mo,Nb imports |
+| SLAG | Silicate + FeS + P-rich | Waste; possible TBC / oxygen |
+| FOAM | FeNi or Ni foam core | Grade C sandwich |
+| PR-NI | Nickel strike + primer | Metal IML to ADH-F |
+| TBC-S | Silicate or imported YSZ-class coat | Hot faces only |
+| HEMP-* | Unchanged | Still Earth or later flax/hemp ISRU — not from Psyche |
+
+Reject: calling raw kamacite “Inconel.” Reject: leaving S and P in a hot-worked plate. Reject: hemp in the melt.
+
+---
+
+## 8. Campaign sense
+
+1. **Now:** MK.I ceramic + hemp on Earth. Learn step-in, hatch, cup, SEAs.
+2. **Sample return / analog:** stamp Grade A plates from meteoritic FeNi on Earth. Hang them on the same spider.
+3. **Belt yard:** Grade A production from M-type + slag. Suits for miners.
+4. **Only then:** Grade C faces where heat or the cup demand it, with an honest alloy book.
+
+SEAs still walk.
+V-EBMs still latch in vacuum (on metal backs).
+DEAs still stay in gas.
+CUP-SM still holds a module, not 1.75e12 kg.
+FTL-BH-1 is still a dorsal pack.
+Launchers still own 15 km/s.
+The belt owns the metal.
