@@ -1,0 +1,154 @@
+# Superalloys — working list for EcoSuit-AS
+**Ni-base · Co-base · Fe–Ni-base**
+Belt metal is Fe–5–10Ni + Co traces. Anything with serious Cr, Al, Ti, Mo, W, Nb, Ta, Re is an alloyed grade, not a raw M-type pour.
+
+---
+
+## 1. Families
+
+| Family | Matrix | Why it exists | Belt-honest path |
+|---|---|---|---|
+| Ni-base | FCC Ni + γ′ Ni₃(Al,Ti) and/or solid solution | Hot section, oxidation, creep | Need concentrated Ni + imported Cr/Al/Ti/Mo/Nb |
+| Co-base | FCC Co + carbides | Hot corrosion, thermal fatigue, less γ′ | Co is in irons (~0.5%); still need Cr/W |
+| Fe–Ni-base | FCC Fe–Ni | Cheaper, cryogenic to mid-heat | Closest to slagged meteoritic FeNi + Cr |
+
+---
+
+## 2. Nickel-base (wrought / commonly specified)
+
+| Alloy | Nominal (wt%, order) | Character | EcoSuit-AS note |
+|---|---|---|---|
+| Inconel 600 | Ni 72, Cr 16, Fe 8 | Solid solution, oxidation | Grade C-lite if Ni is concentrated |
+| Inconel 601 | Ni 61, Cr 23, Al 1.4, Fe | Al for scale | Needs Al import |
+| Inconel 617 | Ni 55, Cr 22, Co 12, Mo 9 | Solid solution, very hot | Co helps (asteroidal); Mo/Cr imported |
+| Inconel 625 | Ni 61, Cr 22, Mo 9, Nb 3.5 | Weldable, corrosion | Nb is the bottleneck |
+| Inconel 718 | Ni 52, Cr 19, Fe 19, Nb 5, Mo 3, Ti 1, Al 0.5 | The workhorse; γ′+γ″ | MK.I cup already called this; not a Psyche melt |
+| Inconel 718Plus | Ni–Co–Cr + Nb, Al, W | Higher temp than 718 | Worse import list |
+| Inconel X-750 | Ni 73, Cr 16, Fe 7, Ti 2.5, Al 0.7, Nb 1 | Springs, fasteners | Fastener class, not plate |
+| Inconel 725 | 718-like + more Mo | Age-hard, sour service | Overkill for plates |
+| Hastelloy X | Ni 47, Cr 22, Fe 18, Mo 9 | Sheet, combustors | Sheet-form plate analog |
+| Hastelloy C-22 / C-276 | Ni–Cr–Mo–W | Wet corrosion | Not a TPS alloy |
+| Haynes 230 | Ni 57, Cr 22, W 14, Mo 2 | Solid solution, stable | W import |
+| Haynes 282 | Ni 57, Cr 20, Co 10, Mo 8.5, Ti 2.1, Al 1.5 | Weldable γ′ | Hot pack / nozzle |
+| Haynes 188 | Co 39, Ni 22, Cr 22, W 14 | (Co-base listed again below) | — |
+| Waspaloy | Ni 58, Cr 19, Co 13, Mo 4, Ti 3, Al 1.3 | γ′, disks | Tight process |
+| Rene 41 | Ni 55, Cr 19, Co 11, Mo 10, Ti 3, Al 1.5 | High strength wrought | — |
+| Rene 88DT | Ni–Cr–Co–Mo–W–Ti–Al–Nb | Powder disk | Not a suit plate |
+| Udimet 720 / 720Li | Ni–Cr–Co–Mo–W–Ti–Al | Disk | — |
+| Nimonic 80A | Ni 75, Cr 20, Ti 2.4, Al 1.4 | Early γ′ | Simple if Ni+Cr exist |
+| Nimonic 90 | Ni 54, Cr 20, Co 18, Ti 2.5, Al 1.5 | — | Co available in traces |
+| Nimonic 105 | Ni–Co–Cr–Mo–Al–Ti | — | — |
+| Nimonic 263 | Ni 51, Cr 20, Co 20, Mo 6, Ti 2.2 | Sheet, weldable | Pack skin candidate |
+| Alloy 214 | Ni 75, Cr 16, Al 4.5, Y | Alumina scale | Hot face coat-adjacent |
+| Alloy 230 | see Haynes 230 | — | — |
+| Monel 400 | Ni 67, Cu 30 | Not a superalloy; corrosion | Listed so it is *not* used as “superalloy plate” |
+
+---
+
+## 3. Nickel-base (cast / single-crystal / directionally solidified)
+
+| Alloy | Nominal highlights | Character | EcoSuit-AS note |
+|---|---|---|---|
+| IN-713C | Ni–Cr–Mo–Al–Ti–Nb | Equiaxed cast | Small fittings |
+| IN-738LC | Ni–Cr–Co–Al–Ti–W–Mo–Nb | Cast blades | — |
+| Mar-M 247 | Ni–Co–W–Cr–Al–Ta–Hf–Ti | DS/equiaxed | Ta/Hf imports |
+| Mar-M 509 | Co–Ni–Cr–W–Ta | Co-base cast | — |
+| CMSX-2 / 3 | Ni–Cr–Co–W–Ta–Al–Ti | 1st-gen SX | Not plate |
+| CMSX-4 | +Re | 2nd-gen SX | Re is Earth-scarce; not belt-mineable at plate scale |
+| CMSX-10 | more Re | 3rd-gen SX | No |
+| Rene N5 / N6 | Re-bearing SX | Blades | No |
+| PWA 1480 / 1484 | SX family | Blades | No |
+| CMSX-8 | lower Re | Cost-down SX | Still not a chest scale |
+
+Do not spec single-crystal on a pauldron. These are turbine airfoils.
+
+---
+
+## 4. Cobalt-base
+
+| Alloy | Nominal (order) | Character | EcoSuit-AS note |
+|---|---|---|---|
+| Haynes 188 | Co 39, Ni 22, Cr 22, W 14 | Sheet, hot | Co from irons is dilute; still a plant |
+| Haynes 25 / L-605 | Co 50, Cr 20, W 15, Ni 10 | Wear + heat | — |
+| Stellite 6 / 21 | Co–Cr–W–C / Co–Cr–Mo | Wear overlays | Hardface a Grade A plate, not the plate |
+| FSX-414 | Co–Cr–Ni–W | Vanes | — |
+| Mar-M 509 | Co–Ni–Cr–W–Ta | Cast | — |
+| MP35N | Co 35, Ni 35, Cr 20, Mo 10 | Strength + corrosion (not “hot”) | Fasteners, springs — S1–S4 class |
+
+Belt Co is real (~0.4–0.6 wt% in many irons) but you concentrate it; you do not cast Haynes 188 from a single M-type heat.
+
+---
+
+## 5. Iron–nickel-base (closest to meteoritic metal)
+
+| Alloy | Nominal (order) | Character | EcoSuit-AS note |
+|---|---|---|---|
+| A-286 | Fe bal, Ni 25, Cr 15, Ti 2, Mo 1.3 | Age-hard stainless | Grade B target if Cr+Ti imported |
+| Incoloy 800 / 800H / 800HT | Fe 46, Ni 32, Cr 21 | Heat + carburization | Mid-grade skin |
+| Incoloy 825 | Ni 42, Fe 22, Cr 21, Mo 3, Cu 2 | Wet corrosion | Hatch plumbing |
+| Incoloy 901 | Ni 42, Fe 35, Cr 13, Mo 6, Ti 3 | Turbine | — |
+| Incoloy 909 | Fe–Ni–Co, low expansion | Controlled CTE | Joint to ceramic leftover tiles |
+| Incoloy 925 | Ni 44, Fe 28, Cr 21, Mo 3, Ti 2 | Age-hard | — |
+| Alloy 330 | Ni 35, Cr 19, Fe bal, Si 1.1 | Heat treat fixtures | Yard tooling, not worn |
+| N-155 / Multimet | Fe–Ni–Co–Cr–Mo–W | Old Fe-base superalloy | Historical |
+| 16-25-6 | Fe–Ni 25, Cr 16, Mo 6 | Forgings | — |
+| Invar 36 | Fe 64, Ni 36 | Not a superalloy; CTE≈0 | Dimensional jigs |
+| Kovar | Fe–Ni–Co | Glass/ceramic seals | Sensor headers |
+| Maraging 250 / 300 / 350 | Fe–Ni 18, Co 8–12, Mo 3–5, Ti | Ultra-high strength, not hot | Exo nodes if you have Co+Mo+Ti |
+| 13-8 Mo / 15-5 / 17-4 PH | Fe–Cr–Ni + precipitate | PH stainless | Fasteners, spiders — not “superalloy face” |
+
+Grade A on the suit is **not** in this table. Grade A is slagged Fe–(5–8)Ni kamacite/taenite analog. A-286 is the first named alloy that *looks* like a suit plate once Cr and Ti exist.
+
+---
+
+## 6. Refractory and “beyond” (do not put on the chest)
+
+| Alloy / class | Why people say it | Why not EcoSuit-AS OML |
+|---|---|---|
+| TZM (Mo–0.5Ti–0.1Zr) | Cup liner in MK.I | Too heavy, oxidizes |
+| Nb-1Zr / C-103 | Heat pipes | Oxidation |
+| Ta–10W | Extreme heat | Mass, cost |
+| W / W–Re | Aft cup dose layer | Already specified as CUP-W, not a plate |
+| Cr alloys | Oxidation | Brittle |
+| Ti aluminides | Aero hot structure | Not asteroid-native; different shop |
+| ODS MA754 / MA956 | Oxide dispersion | Powder plant |
+
+---
+
+## 7. Map onto EcoSuit-AS grades
+
+| Grade | Allowed names on the drawing | Not allowed |
+|---|---|---|
+| A — meteoritic plate | “Fe–7Ni slagged, heat XXX” | Any Inconel / Haynes / CMSX name |
+| B — belt stainless / Fe–Ni | A-286, Incoloy 800, 21-6-9-class, custom Fe–18Cr–8Ni | 718, SX, Re-bearing |
+| C — Ni-base face | 600, 625, 617, 718, Haynes 230/282, Nimonic 263 | CMSX-4 on a pauldron |
+| Cup / hatch / nozzles | 718, 625, Haynes 282, MP35N fasteners | Grade A only |
+| Exo spider | Ti-6Al-4V (Earth) or maraging / A-286 if belt | Ceramic |
+| Hardface | Stellite overlay on Grade A | Stellite as the whole scale |
+
+---
+
+## 8. Elements you must import (or separately extract)
+
+To move A → B → C:
+
+| Element | In typical iron meteorite | In 718 | Problem |
+|---|---|---|---|
+| Ni | 5–10% (taenite pockets higher) | ~52% | Concentrate or sort taenite |
+| Cr | ppm–0.2% | ~19% | Import or silicate ore |
+| Nb | ~none | ~5% | Import |
+| Mo | ppm | ~3% | Import |
+| Ti | ppm | ~1% | Import |
+| Al | not native metal | ~0.5% | Import |
+| Co | ~0.5% | residual in some alloys | Useful, dilute |
+| W, Ta, Re, Hf | traces / none | SX / 230 / 247 | Do not plan plates around them |
+
+---
+
+## 9. Short spec language (copy onto a title block)
+
+- Grade A: slagged Fe–Ni, named by heat and Ni%.
+- Grade B: name a real Fe–Ni alloy (A-286 or 800) only after Cr assay exists.
+- Grade C: name 600 / 625 / 718 only after Ni concentrate + alloy book exist.
+- No single-crystal, no Re, no “Psyche-718.”
+- Superalloy is the face or the cup. Hemp or metal foam is the core. The exo is still the skeleton.
