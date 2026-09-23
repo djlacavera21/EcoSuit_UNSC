@@ -1,0 +1,129 @@
+# Titanium alloys — EcoSuit / EcoSuit-AS working list
+**α · α+β · β · CP · aluminides**
+Ti is not a belt-native plate metal. M-type FeNi has Ti at ppm. Treat every Ti line as Earth (or lunar ilmenite) import unless a separate oxide-reduction plant exists.
+
+---
+
+## 1. Families
+
+| Family | Structure | Character | Suit job |
+|---|---|---|---|
+| CP (Grades 1–4) | α, unalloyed | Ductile, weldable, weaker as O rises | Lines, bellows, non-structural skins |
+| α / near-α | HCP | Creep + weld, modest strength | Hot fittings, not the exo |
+| α+β | HCP + BCC | The workhorses | Longerons, yoke, hatch, S1–S4 |
+| β / metastable-β | BCC | Formable, high strength after STA | Springs, complex nodes, fasteners |
+| TiAl / aluminides | Intermetallic | Light + hot, brittle | Not a chest plate, not a hatch seal |
+
+---
+
+## 2. Commercially pure
+
+| Grade | O (typ. max, order) | Strength class | Notes |
+|---|---|---|---|
+| Grade 1 | lowest O | Softest CP | Max formability; bellows, COOL lines |
+| Grade 2 | — | Workhorse CP | General tubing, QD bodies if loads are low |
+| Grade 3 | — | Mid | Little use on the suit |
+| Grade 4 | highest O of CP | Strongest CP | Still not exo structure |
+| Grade 7 / 11 | +Pd | CP + crevice corrosion | Wet loops if you ever run sour analog |
+| Grade 16 / 26 | +Pd lean | Same idea, cheaper Pd | — |
+
+Do not spec Grade 1 for S1–S4. Do not spec Grade 4 as a substitute for 6Al-4V.
+
+---
+
+## 3. Alpha and near-alpha
+
+| Alloy | Nominal (wt%) | Character | Suit note |
+|---|---|---|---|
+| Ti-3Al-2.5V (Grade 9) | Al 3, V 2.5 | Cold-drawable tube | Hydraulic / coolant tube, harness lines |
+| Ti-5Al-2.5Sn (Grade 6) | Al 5, Sn 2.5 | Weldable α, cryogenic | Cold service; not a first pick |
+| Ti-8Al-1Mo-1V | Al 8, Mo 1, V 1 | Near-α, creep | Hot cup-adjacent fittings only |
+| Ti-6Al-2Sn-4Zr-2Mo (6242) | Al 6, Sn 2, Zr 4, Mo 2 | Near-α, creep | Hopper nozzle land — not plates |
+| Ti-6Al-2Sn-4Zr-6Mo (6246) | more Mo | Stronger near-α | Same |
+| IMI 685 / 829 / 834 | near-α aero | Disk / hot | Over-specified for a HUT |
+| Ti-0.3Mo-0.8Ni (Grade 12) | Mo, Ni | CP-like + crevice | Wet fittings |
+
+---
+
+## 4. Alpha-beta (default EcoSuit structural Ti)
+
+| Alloy | Nominal (wt%) | Character | Suit note |
+|---|---|---|---|
+| **Ti-6Al-4V (Grade 5)** | Al 6, V 4 | The default. STA or annealed | Exo tubes, hatch ring, spider, S1–S4, cup wall option |
+| **Ti-6Al-4V ELI (Grade 23)** | same, extra-low interstitial | Toughness + fracture | Crew-adjacent structure, cryo, better damage tolerance |
+| Ti-6Al-4V Grade 24 / 25 | +Pd / +Ni+Pd | 6-4 + corrosion | Wet QDs |
+| Ti-6Al-6V-2Sn (6-6-2) | Al 6, V 6, Sn 2 | Stronger than 6-4 | Heavy nodes |
+| Ti-6Al-2Sn-4Zr-6Mo | see near-α/α+β border | High strength | — |
+| Ti-5Al-2Sn-2Zr-4Mo-4Cr (Ti-17) | β-rich α+β | Disks | Not first article |
+| Ti-4.5Al-3V-2Mo-2Fe (SP-700) | superplastic | SPF parts | Complex hatch petals |
+| Ti-6Al-7Nb | Al 6, Nb 7 | Implant analog, V-free | Soft-goods adjacent if you care about V |
+| Ti-5Al-2.5Fe | Al 5, Fe 2.5 | V-free α+β | Same idea |
+| ATI 425 | Al 4, V 2.5, Fe 1.5, O | Formable sheet | Pack skins if not metal-AS |
+| Ti-3Al-8V-6Cr-4Mo-4Zr | see β (Beta C) | — | Listed below |
+
+**MK.I callout:** EXO-TI and FAST Ti = **Ti-6Al-4V** annealed or STA. Crew-critical rings = **ELI**.
+
+---
+
+## 5. Beta and metastable-beta
+
+| Alloy | Nominal (wt%) | Character | Suit note |
+|---|---|---|---|
+| Ti-15V-3Cr-3Al-3Sn (15-3-3-3) | V 15, Cr 3, Al 3, Sn 3 | Cold-roll sheet, STA | Thin pack skins, formed brackets |
+| Ti-3Al-8V-6Cr-4Mo-4Zr (Beta C) | — | High strength bar/fastener | M8 captives if 6-4 isn’t enough |
+| Ti-10V-2Fe-3Al (10-2-3) | V 10, Fe 2, Al 3 | Forgings | Yoke forging |
+| Ti-5Al-5Mo-5V-3Cr (Ti-5553) | — | High-strength forging | Landing / hop nodes |
+| Ti-5Al-5V-5Mo-3Cr-0.5Fe (5553 variant) | — | Same family | — |
+| Beta-21S (Ti-15Mo-2.7Nb-3Al-0.2Si) | Mo 15 | Oxidation + heat, strip | Hot face behind a TBC, not OML |
+| Ti-15Mo / Grade 21 | Mo 15 | β, corrosion | Niche |
+| Ti-13V-11Cr-3Al (B120VCA) | old β | Historical | Avoid new design |
+
+β alloys want a frozen STA recipe. Do not “shop-age” a fastener lot.
+
+---
+
+## 6. Aluminides and intermetallics (not plates)
+
+| Alloy | Character | Suit note |
+|---|---|---|
+| γ-TiAl (48-2-2, TNM, etc.) | Light, hot, low ductility | No hatch, no step-in lip |
+| α₂-Ti₃Al | Hot, brittle | No |
+| Orthorhombic Ti₂AlNb | Better toughness than γ | Research fittings only |
+| NiTi (Nitinol) | Shape memory / superelastic | Glove / latch spring coupon — not a plate |
+
+---
+
+## 7. Map onto the suit
+
+| Location | Default alloy | Alternate | Do not use |
+|---|---|---|---|
+| Exo longerons / rib analog | Ti-6Al-4V | ELI if damage-tolerance gated | CP Gr.1, γ-TiAl |
+| Pelvic yoke | 6-4 forging or 10-2-3 | 5553 if hop landing spikes | CP |
+| Hatch ring (Datum C) | 6-4 ELI | 6-4 STA | Beta C (galvanic + process) |
+| Sternum spider S1–S4 | 6-4 or Inconel 718 (already on the cup) | Beta C fasteners | Grade A FeNi bolts into Ti without isolation |
+| Cup wall (MK.I) | 6-4 or 718 | Beta-21S inner if hot analog | CP |
+| Coolant lines | Grade 2 or 3Al-2.5V | Grade 12 | 6-4 tube unless specified |
+| Dorsal pack structure | 6-4 tube | 15-3-3-3 sheet skins | Ceramic as structure |
+| Springs / clutches | Beta C, 15-3, or steel SEA spring | Nitinol coupon | CP |
+| EcoSuit-AS plate face | Not Ti | Grade A FeNi → C superalloy | “Ti plate from Psyche” |
+
+---
+
+## 8. Process notes that belong on the traveler
+
+- 6-4: mill anneal for most tubes; STA only where the drawing pays for it.
+- ELI: extra-low O/N/C/Fe — do not weld it with dirty CP filler and call it ELI.
+- No hydrogen pickup. Pickle / vacuum / dry gas after any wet step. Ti + H = delayed cracking in a hatch ring.
+- Galvanic: Ti + carbon-hemp backing + wet loop = isolate. Ti + Grade A FeNi = isolate or you eat the iron.
+- Filler: ERTi-5 for 6-4; do not weld 6-4 with CP filler on a structural land.
+- NDE: dye + UT on rings; conductivity is not your friend like it is on FeNi.
+
+---
+
+## 9. Title-block language
+
+- Default structural Ti is Ti-6Al-4V. Write ELI when the part can kill the crew if it tears.
+- CP is plumbing.
+- Beta is fasteners, formed sheet, and forgings with a written STA.
+- TiAl stays off the OML and off the hatch.
+- Ti is an import to EcoSuit-AS. Belt plates are FeNi / superalloy. The skeleton can stay 6-4 until a reduction plant exists.
