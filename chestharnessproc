@@ -1,0 +1,274 @@
+# EcoSuit MK.I — Chest plates + chest harness
+**Full shop process: plastron sandwich plates, sternum cup, chest harness spider, mate to HUT / dorsal pack**
+Paper traveler. Not a method to build a horizon or an FTL drive.
+Chest hardware mounts ABH-2600-SM only. Load path is lattice, not ceramic.
+
+---
+
+## 0. What you are building
+
+Three LRUs that become one chest article:
+
+| LRU | Name | Job |
+|---|---|---|
+| PLT-CHEST | Faceted ceramic / hemp sandwich set (plastron + collateral scales) | OML, heat, MMOD, Iron Man read |
+| CUP-SM | Sternum cup + cap (ABH-2600-SM) | Shielded 118 mm module bore |
+| HARN-CH | Chest harness spider + strap-and-longerons | Carries plates and cup into the HUT; ties to FTL-BH-1 / DSH-1 at the hatch ring |
+
+Worn stack through the sternum (outside → in):
+CER face → densified IML → flexible adhesive → hemp core → backing + Ti / S-glass doubler → HUT shell → harness spider → cup → LCVG stand-off.
+
+Hemp stops at the sealed cup land. Bolts never enter ceramic or core.
+
+---
+
+## 1. Drawings and datums (do this before any fiber hits a tool)
+
+1. Freeze the plastron facet pattern (triangle language from the MK.I sketch).
+2. Datum A: HUT sternum plane.
+3. Datum B: sagital midplane.
+4. Datum C: hatch-ring upper bolt plane (harness aft).
+5. Call out warp direction on every core.
+6. Call out S1–S4 (M8, 52 mm from center, 18 mm off midplane) and the 6 mm 12 o’clock pin.
+7. Inner cutout: 118 mm cup OD land, 72 mm clear bore, cap protrusion ≤ 22 mm forward of OML.
+8. Serial scheme:
+   - PLT-CHEST-xxx
+   - CORE-LOT-xxxx / BLANK-ID
+   - CUP-SM-xxx
+   - HARN-CH-xxx
+   - ASSY-CHEST-xxx
+
+No drawing, no layup.
+
+---
+
+## 2. Materials kit (chest only)
+
+Pull from the master materials list. Minimum kit for one chest:
+
+**Plates**
+- CER-B blanks (black HRSI analog) sized + grind stock
+- CER-D densify slurry, CER-WP overcoat
+- HEMP-W, HEMP-U, HEMP-M from a baked CORE-LOT
+- MAT-P (PI or phenolic). MAT-E epoxy = ground demo only
+- ADH-F flexible adhesive (0.15–0.25 mm)
+- SEAL-PI edge-seal system
+- BK-SG backing; DBL-TI or DBL-SG doubler; INS-TI inserts
+- Peel ply, bag kit, cauls
+
+**Cup + harness**
+- CUP-CU liner (OFHC Cu or TZM)
+- CUP-TI or CUP-IN wall
+- CUP-SG wrap, CUP-W aft (crew-side) only
+- CAP-S ceramic-faced cap
+- EXO-IN or EXO-TI spider
+- FAST-A286 / Ti M8 captives (S1–S4), PIN-17 dowel
+- DSH interface brackets (upper two toward hatch ring)
+- COOL-A/B 4 mm stainless + QDs, DSH-HP heat-pipe stub
+- PWR-1 / TM connectors, dead-face half
+- Optional V-EBM pair for the cap latch (vacuum-side only)
+
+Reject: VHB, carbon grease, hemp inside the cup, bolt-through-ceramic hardware, any tube stamped “to Rs.”
+
+---
+
+## 3. Process map
+A  CERAMIC FACES blank → sinter → grind OML / IML → densify IML → coat-fire → overcoat → NDE → bag
+B  HEMP CORES lot bake → degum → form → impregnate → layup → cure → post-cure → net CNC → edge seal → outgas bake → NDE → bag
+C  BACKING + DOUBLER cut BK-SG → bond / co-cure DBL-TI → install INS-TI → drill S1–S4 from jig → NDE
+D  PLATE BOND dry-fit on chest master → ADH-F ceramic↔core↔backing → cure → NDE → serial
+E  CUP machine wall → liner → aft W layer → SG wrap → leak / thermal coupon → cap
+F  HARNESS SPIDER machine / weld / bond nodes → proof 2× Case A → prime / isolate
+G  CHEST MATE HUT dummy or flight HUT → spider on Datum A/B → plates hung → cup torqued → cap → harness-to-dorsal lines → leak / electrical / proof → bag ASSY-CHEST
+
+A, B, C can run in parallel. D waits on A+B+C. G waits on D+E+F.
+
+---
+
+## 4. Stream A — ceramic faces
+
+1. Cut / mold oversize blanks. One blank per facet. Chest set is a family; do not mix lots across a plastron.
+2. Sinter to the ceramic spec. Record kiln curve.
+3. Grind OML to the facet (triangle language, sharp but not knife-edge). Grind IML flat to bond spec.
+4. Densify IML (CER-D). This is the Shuttle lesson. Skip it and the adhesive lets go.
+5. Coat-fire CER-B (black) on OML. Chest is mostly black leading surface.
+6. CER-WP waterproof / AO overcoat.
+7. NDE: visual, mass, tap, coating thickness, edge chips.
+8. Bag with foam dams. Ceramic chips are scrap, not “fit on the side.”
+
+Chest-specific: the plastron face that receives CAP-S is a closeout ring, not a continuous tile. Leave the 118 mm land uncoated on the IML so the cap seal sees a known surface.
+
+---
+
+## 5. Stream B — hemp cores (chest cutouts included)
+
+Follow the hemp-core traveler. Chest deltas only:
+
+1. CORE-LOT bake #1 / degum / bake #2 as standard.
+2. Forms: HEMP-W skins + HEMP-U on the S1–S4 land (still no bolt in the hemp) + HEMP-M fill to 6–10 mm.
+3. Impregnate Route A prepreg preferred.
+4. Layup on a chest caul that already has the 118 mm plug. Core must stop at the sealed land. Do not fill the bore with bast.
+5. Cure + post-cure.
+6. CNC net, including inner bore +3 mm for the seal stack.
+7. Edge-seal **outer perimeter and inner bore**. 10×: no fuzzy fiber.
+8. Vacuum bake #3 to TML / CVCM gate.
+9. NDE + coupons from the same bag.
+10. Bag, desiccant, serial. If the humidity indicator trips, re-bake. Do not bond a wet chest core.
+
+Warp: call it on the drawing. Typical chest: warp vertical on the large center facets.
+
+---
+
+## 6. Stream C — backing and doubler
+
+1. Cut BK-SG to net + bond flash.
+2. Bond or co-cure DBL-TI (or DBL-SG if you need dielectric near HV).
+3. Install INS-TI inserts. Captive. No spinning nuts on EVA.
+4. Drill S1–S4 and the 6 mm pin from a steel jig locked to Datum A/B. Do not drill from the ceramic.
+5. Tap / inspect threads. A286 or Ti M8 only.
+6. Peel-ply or abrade the core-facing side to the ADH-F spec.
+7. NDE: insert pull coupon on a witness piece from the same cure.
+
+The doubler is the bolt land. The core is not.
+
+---
+
+## 7. Stream D — plate bond (the sandwich)
+
+1. Pull ceramic, core, backing from dry bags. Moisture gate on the core.
+2. Dry-fit the whole chest family on the chest master (HUT dummy + spider). Check:
+   - facet gaps / overlap (Iron Man scale language)
+   - 118 mm land concentric to the cup
+   - no core proud of the seal land
+   - step/gap within drawing
+3. ADH-F ceramic IML → core, 0.15–0.25 mm. If you are outside that window, stop.
+4. ADH-F core → backing.
+5. Bag or fixture-cure per adhesive. Caul the OML so facets stay coplanar.
+6. Trim flash. Do not nick the ceramic coat.
+7. NDE: tap, thermography or UT at the bond, visual step/gap, mass.
+8. Serial PLT-CHEST-xxx and lock it to CORE-LOT + CER lot + ADH lot.
+
+Do not hang plates on the flight HUT until Stream F is proofed.
+
+---
+
+## 8. Stream E — sternum cup (ABH-2600-SM)
+
+1. Machine CUP-TI or CUP-IN wall: OD 118 mm class, ID for 72 mm clear + liner.
+2. Bond / shrink CUP-CU liner (1.0–1.5 mm).
+3. Apply CUP-W (2–4 mm W or W-Cu) on the **aft / crew side only**.
+4. Wrap CUP-SG (S-glass / PI, 2 mm) on the outer wall.
+5. Machine flange for S1–S4 pattern. Same jig as Stream C.
+6. Install COOL-A/B jacket passages and QDs.
+7. Install TM bosses (thermistors, optional dose).
+8. Fit CAP-S: ceramic-faced, faceted, removable. Optional V-EBM latch on the cap — vacuum-side only, HV inhibited in air / dirty vac.
+9. Leak-check cup (helium or pressure decay).
+10. Thermal coupon: 150 W continuous / 400 W peak analog into the liner; crew-side wall ≤ 80 °C with loop on.
+11. Bag CUP-SM-xxx. No hemp, no ceramic chips, no “Rs feed” fitting anywhere on this part.
+
+---
+
+## 9. Stream F — chest harness spider
+
+This is the chest half of the harness, not the full dorsal pack.
+
+1. Cut / machine EXO-TI or EXO-IN nodes:
+   - four sternum ears (S1–S4)
+   - two superior runs toward the hatch ring (mate to FTL-BH-1 upper bolts)
+   - two inferior runs toward the pelvic yoke
+   - optional lateral runs under the pauldrons (no plate attach)
+2. Join: weld, bolt, or co-bond per the drawing. Stress-relieve if welded.
+3. Isolate: PI / S-glass where the spider can see PWR-HV creepage.
+4. Proof: 2 × Case A (6 g axial equivalent on the chest mass properties, including 8 kg SM analog). Hold. No yield, no cracked joint.
+5. Fit-check on Datum A/B/C. Pin hole must pick up without a mallet.
+6. Prime / conversion coat. No bare steel.
+7. Serial HARN-CH-xxx.
+
+Strap option (donning aid only): textile secondary over the spider. Textile does not carry Case A.
+
+---
+
+## 10. Stream G — chest mate (the article)
+
+Tool: HUT dummy first. Flight HUT only after dummy pass.
+
+1. Locate HARN-CH on Datum A/B. Pin, then S1–S4 into the HUT lattice — still no plates.
+2. Torque S1–S4 to spec in star pattern. Witness marks.
+3. Hang PLT-CHEST family from backing inserts onto the spider / HUT lands. Ceramic is a passenger.
+4. Confirm inner bore is clear. Drop CUP-SM from the front or from the interior per drawing. Flange seats on the doubler, not on hemp.
+5. Torque cup flange. Same star pattern. Cap off.
+6. Route COOL-A/B and DSH-HP stub aft along the superior longerons to the hatch ring. Bellows at the ring. No line across a plate bond.
+7. Mate PWR-1 and TM. Dead-face half stays on the harness side.
+8. If V-EBM cap latch is fitted: hook HV only at the inhibit box. Do not energize in the shop air without the Paschen procedure.
+9. LCVG stand-off: 8–15 mm, no hard cup-to-sternum contact.
+10. Checks before bag:
+    - pressure-shell leak (if on flight HUT)
+    - cup leak
+    - loop flow / ΔT at 150 W analog
+    - insulation resistance PWR-1
+    - HV inhibit proves open
+    - visual step/gap on every chest facet
+    - no hemp visible at the bore
+11. Serial ASSY-CHEST-xxx. Photograph OML + inner lands. Bag.
+
+Dorsal pack (FTL-BH-1 / DSH-1) mates at the hatch ring on a separate traveler. This chest article must accept that pack without pulling a plate.
+
+---
+
+## 11. Don / doff and swap times (acceptance)
+
+| Action | Gate |
+|---|---|
+| Cap off, module out (SM analog) | ≤ 90 s on a stand |
+| Full cup off | plates stay on |
+| One chest plate off | adjacent plates stay; no cup movement |
+| Harness undock (dorsal) | PWR-1 and HV dead-face, COOL QDs shut |
+
+If you have to unbond a sandwich to change the cup, the design failed Stream G.
+
+---
+
+## 12. Inspection gates (copy onto the traveler)
+
+| Gate | Stream | Fail if |
+|---|---|---|
+| CER coat + IML densify | A | Chip, bare substrate, no densify record |
+| Core moisture + edge seal | B | Indicator trip, fuzzy bore |
+| S1–S4 from jig | C / F | Pattern mismatch > drawing |
+| ADH-F thickness | D | Outside 0.15–0.25 mm |
+| Cup leak + 80 °C wall | E | Leak or over-temp at 150 W |
+| Spider 2 × Case A | F | Yield, cracked node |
+| Step/gap + no hemp in bore | G | Core proud, plate clash |
+| Genealogy complete | G | Any lot blank |
+
+---
+
+## 13. Failure modes this traveler exists to prevent
+
+| Skip | Result |
+|---|---|
+| Densify IML | Ceramic pops on the first thermal cycle |
+| Edge-seal the bore | Chest core pumps into the cup land |
+| Bolt in ceramic or hemp | Crush + leak + a plate you cannot pull |
+| Mix CORE-LOTs on one plastron | Untestable bond family |
+| Proof spider after plates are hung | You just acoustic-tested tiles with a hammer |
+| Coolant across a plate bond | First flex shears a line and a sandwich |
+| REAL-core mass in the cup | 132 g + 176 g tide — FAIL-CLOSED, not a process step |
+| Energize V-EBM in air | Paschen arc |
+
+---
+
+## 14. First article (one chest, not a suit)
+
+1. Three-facet plastron + one collateral scale.
+2. One core with bore, one without.
+3. One cup, one spider, dummy HUT.
+4. Coupons: ceramic bond flatwise, core shear, cup leak, spider proof.
+5. Mate, 150 W thermal, 2 × Case A on the dummy, cap swap in 90 s.
+6. Freeze the recipe. Then cut a full chest family.
+
+Title-block notes:
+- ABH-2600-SM only in the cup.
+- ABH-2600-REAL is not this traveler.
+- FTL-BH-1 is the dorsal service pack; superluminal function is not a shop step.
+- Ice lines, if any, terminate on the pack / bus, not at Rs.
