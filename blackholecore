@@ -1,0 +1,49 @@
+# EcoSuit — ABH 1.3 attometer core + ice feed
+**Paper reactor only. Not a wearable engine.**
+
+## Object
+Rs = 1.3e-18 m  →  M = Rs c² / (2G) = 8.75e8 kg  (875,000 t)
+
+| Quantity | Value |
+|---|---|
+| Mc² | 7.87e25 J  (~1.9e10 Mt TNT) |
+| vs 200 kg @ 16 km/s | ~3e15× |
+| vs world primary energy | ~1.3e5 years in one object |
+| T_Hawking | 1.40e14 K |
+| P_Hawking | 4.65e14 W  (465 TW) |
+| Evaporation life (unfed) | ~1,800 yr, then runaway hotter |
+| Capture cross-section | 3.6e-35 m² |
+| H2O diameter / Rs | ~2.1e8 |
+| L_Eddington | ~6.5e9 W |
+| P_H / L_Edd | ~7e4  (radiation blows feed away) |
+
+## Gravity at suit distances (not the killer)
+| r | g | Tide / 20 cm |
+|---|---|---|
+| 1 m | 0.006 g | ~0 |
+| 0.3 m | 0.066 g | ~0.09 g |
+| 1 cm | 60 g | ~2,300 g |
+
+Killer is flux, not g.
+Flux on 1 m² at 1 m ≈ 3.7e13 W/m².
+Range for 1 kW/m² ≈ 190 km.
+Range for 1 MW/m² ≈ 6 km.
+
+## Ice particulates
+Accretion into the hole: no. Horizon is 200 million times smaller than a water molecule. Hawking wind is 70,000× Eddington. Ice never reaches Rs.
+
+Ice as working fluid around the hole: only as reaction mass in a remote heat engine. That engine sits kilometres away. It is a stage, not a sternum core. 0.1% intercept of 465 TW is still 465 GW.
+
+Hawking power is fixed by mass (P ∝ 1/M²). Feed it (if you could) and it dims. Starve it and it heats up. No throttle.
+
+## Earth→Moon
+Energy: yes, by 15 orders of magnitude.
+Thrust, throttle, standoff, crew survival, manufacture: no.
+Making the object is concentrating ~1e5 years of world energy into 1.3 am. Not a line on the EcoSuit traveler.
+
+## Assignment
+Case D only — labeled “not flown.”
+If it existed it would be a remote power plant for a vehicle, never a suit core.
+EcoSuit still rides a launcher.
+SEAs walk. V-EBMs latch plates. DEAs stay in gas.
+Plates never see the core.
