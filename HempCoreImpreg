@@ -1,0 +1,237 @@
+# EcoSuit MK.I — Hemp core impregnation
+**The step that turns degummed bast into a bondable SIP core**
+If wet-out fails here, the ceramic fails later. This traveler starts after bake #2 / card / weave and ends at a B-staged roll or a wet-laid blank ready for cure.
+
+---
+
+## 0. Gate in
+
+Do not impregnate until all of these are true:
+
+| Gate | Number |
+|---|---|
+| Fiber form on hand | HEMP-W and/or HEMP-U and/or HEMP-M, CORE-LOT serialized |
+| Degum complete | No slick pectin feel, rinse pH in window |
+| Moisture | ≤ 2–4% by shop coupon (freeze the number) |
+| Layup-room RH | Controlled; fiber out-time clock starts at bag open |
+| Resin lot | PI or phenolic for flight-like cores. Toughened epoxy = ground demo only |
+| Coupling agent | On or off by spec — not “some rolls yes” |
+| Tool / film / solvent | Named on the traveler |
+
+If the humidity indicator on the fiber bag has tripped, re-bake. Do not chase wet bast with extra resin.
+
+---
+
+## 1. What “impregnated” means
+
+Target is not “looks wet.” Target is:
+
+- Every bast filament wetted (no white dry islands at 10×)
+- Controlled fiber volume
+- Controlled resin content
+- Two clean bond faces (or peel ply)
+- Low enough void that bake #3 and the ceramic adhesive can finish the job
+- No race-track, no resin-starved mid-plane, no crushed bast cardboard
+
+Starting windows (coupon-tune, then freeze):
+
+| Form | Fiber volume | Resin content (by mass, order) |
+|---|---|---|
+| HEMP-W skins | 45–55% Fv | ~40–55% |
+| HEMP-U skins | 50–60% Fv | ~35–50% |
+| HEMP-M fill | 25–40% Fv | resin-rich OK if edge-sealed later |
+
+A resin-starved hemp core under ceramic is worse than a slightly rich one. Bast does not forgive dry centers.
+
+---
+
+## 2. Two legal routes (do not mix on one plate)
+
+| | Route A — Prepreg | Route B — Wet lay / VARTM |
+|---|---|---|
+| Use | Flight-like cores, chest family, repeatable Fv | Large blanks, ground demo, odd shapes |
+| Resin state at store | B-staged film or prepreg roll | Wet at the tool |
+| Wet-out control | Calender / film weight | Vacuum fill + bleed |
+| Out-time | Clock from freezer / bag | Clock from mix |
+| Risk | Dry edges if film is short | Race-tracks and wet puddles |
+| Preferred for EcoSuit plates | **Yes** | Only when A will not nest |
+
+Pick one per CORE-LOT. Write it on the bag.
+
+---
+
+## 3. Resin systems
+
+| System | When | Notes |
+|---|---|---|
+| Polyimide (MAT-P / PI) | Flight-like | High Tg, outgas-capable, slow process, follow the data sheet |
+| Phenolic (MAT-P) | Flight-like alternate | Good heat, water by-product in cure — bag and post-cure matter |
+| Toughened epoxy (MAT-E) | Ground dummy only | Not the orbital core matrix |
+| Solvent carrier | Only if the PI / phenolic route requires it | Must leave in B-stage + bake #3. No “it will flash off on orbit” |
+
+Forbidden as the impregnation resin: random hardware-store oil, linseed “sealer,” wet polyester, anything that cannot pass TML / CVCM later.
+
+Mix:
+- Weigh resin and any hardener / catalyst to the sheet.
+- Pot life on the clock.
+- Degas if the sheet says so (PI and filled phenolics often do).
+- No stirring air into a high-viscosity PI and calling it wet-out.
+
+---
+
+## 4. Optional coupling (silane class)
+
+If the spec says coupling:
+
+1. Apply after degum and bake #2, before impregnation.
+2. Dilute per the silane sheet. Do not dump concentrate on a roll.
+3. Even pickup — dip + nip or spray + dwell.
+4. Dry to the sheet. This is not a third moisture bake of the bast; it is a finish.
+5. Record lot, concentration, dwell, dry.
+
+If the spec says no coupling, do not “improve” a roll at the tank. Mixed coupling inside one CORE-LOT makes the ceramic bond untestable.
+
+---
+
+## 5. Route A — prepreg impregnation
+
+### 5.1 Film route (preferred)
+dry fabric from dry box → align on release film → resin film laid to gsm callout → cover film → heat-nip / calender (temperature from resin sheet) → cool → trim selvage → peel-ply one or both faces if specified → roll on a core, barrier bag, desiccant → freezer or sheet-specified store → out-time clock starts at next bag-open
+
+Rules:
+- Film gsm is the control. Weigh coupons before and after. Do not guess from “it looks glossy.”
+- Nip temperature: high enough to flow into the bast lumen, low enough not to kick the B-stage to C.
+- Nip pressure: enough to drive resin through the weave. Too much and you squeeze resin to the selvage and starve the field.
+- Warp stays warp. Do not let the nip skew HEMP-U.
+- HEMP-M mat drinks more film than weave. Separate film callout for mat.
+
+### 5.2 Solvent / hot-melt dip route
+dry fabric → dip or coat in controlled solids bath → nip → flash tunnel (solvent to the sheet residual) → B-stage oven to tack window → cool, roll, bag
+
+Rules:
+- LEL / fume control. This is not an open tray on a bench.
+- Residual solvent after B-stage is a recorded number. Bake #3 is not a license to leave the core wet with NMP or alcohol.
+- Bast wicks along the fiber. Dip time is short; dwell is in the nip and the flash, not in a soup pot.
+
+### 5.3 B-stage window
+
+Define three states on the traveler:
+
+| State | Feel | Use |
+|---|---|---|
+| Under-staged | Wet, slides, fingerprints | Not ready — more flash / oven |
+| In window | Tack, drapes, no puddle | Layup |
+| Over-staged | Boardy, no tack | Scrap or strictly limited as a filler ply if the spec allows |
+
+Chest cores: stay in window. Over-staged hemp will not wet the ADH-F land and will print wrinkles into the ceramic.
+
+### 5.4 Prepreg QA (every roll)
+
+| Check | Gate |
+|---|---|
+| Areal weight / resin content coupon | Within window |
+| Moisture | Still ≤ gate after impregnation |
+| 10× face | No dry tow, no film skip |
+| Tack | In window |
+| Residual solvent (if dip) | ≤ sheet |
+| Width / warp | Matches kit drawings |
+| Out-time remaining | Written on the bag |
+
+---
+
+## 6. Route B — wet lay / VARTM
+
+Use when the blank will not nest from a roll (odd chest bore trial, large harness skin).
+
+seal the tool → dry fabric + mat stack, peel ply both faces → flow media only where the spec allows (not against a future bond face) → bag → leak-check → pull vacuum to the number → mix + degas resin → infuse slow → catch pot sees resin before you claim fill → clamp inlets → hold vacuum through gel → onto cure traveler
+
+Rules that bast specifically needs:
+
+- **Slow fill.** Cellulose wicks along the yarn faster than the mid-plane fills. Fast inlet = wet edges, dry heart.
+- **No race-track** at the chest bore plug. Put a resin dam around the 118 mm land or the bore drinks the shot and the field starves.
+- **Bleed.** A little extra into the catch pot beats a starved mat.
+- **Peel ply on both bond faces.** Do not let flow media print into a face that will see ADH-F.
+- Pot life must exceed fill time with margin. PI viscosity climbs; if the shot gels in the line, the blank is scrap.
+
+Wet-lay QA:
+- Catch-pot mass vs theoretical shot
+- Visual fill front (record)
+- 10× after gel: no white islands
+- Thickness vs caul gap
+
+---
+
+## 7. Form-specific notes
+
+**HEMP-W**
+- Balanced weave likes film route.
+- Watch crimp pockets. Those are void sites if the nip is cold.
+
+**HEMP-U**
+- Keep tow spread. A closed UD tape will not wet the center filaments.
+- Film on both sides of a thick tape, or two thin tapes, beats one drowning dip.
+
+**HEMP-M**
+- Mat is a sponge. Meter resin by mass, not by “until it looks wet.”
+- Orient the mat if the drawing calls orientation. Random mat is for fill, not for the bond skin.
+
+**Chest bore blanks**
+- Impregnate the field as a rectangle.
+- Cut the 118 mm hole after B-stage or after cure, then edge-seal. Do not try to impregnate a doughnut on Route A unless the kit is already net — resin will dump into the hole.
+
+---
+
+## 8. Handling after impregnation
+
+- Barrier bag, desiccant, humidity card, CORE-LOT + ROUTE + RESIN-LOT + DATE + out-time.
+- Route A: freezer or sheet store. No lean against a heater.
+- Do not stack hot B-stage rolls. They will block and over-stage in the core of the roll.
+- Kit-cut only after the roll is in window and moisture-gated again if it sat.
+- Out-time exceeded = stop. Re-B-stage only if the resin sheet allows it. Most PI / phenolics do not get a second life.
+
+Hand-off to layup:
+- Peel ply on, or faces prepped
+- Warp marked
+- Resin content known
+- Moisture known
+- No mystery tack
+
+---
+
+## 9. Failure modes this step owns
+
+| Defect | Cause | Caught by | Later death |
+|---|---|---|---|
+| White islands | Cold nip, short film, fast VARTM | 10× | Bond blister under ceramic |
+| Starved mid-plane | Squeeze-out, race-track into bore | Mass coupon, tap after cure | Core shear fail |
+| Resin flood | Heavy film, no nip control | Mass coupon | Heavy plate, poor isolation |
+| Over-stage | Hot nip / long oven | Tack test | Will not drape; print-through |
+| Solvent left in | Short flash | Residual test | Outgas into ADH-F on orbit |
+| Wet bast into resin | Skipped bake | Moisture coupon | Steam voids |
+| Mixed coupling | “Helpful” tank | Lot record | Untestable chest family |
+| Flow-media print | Media on bond face | Visual | ADH-F thickness out of 0.15–0.25 mm |
+
+---
+
+## 10. First-article impregnation coupon
+
+Before a chest family:
+
+1. 200 × 200 mm HEMP-W, Route A film, PI or phenolic.
+2. 200 × 200 mm HEMP-W + HEMP-M fill, same route.
+3. One coupon with a bored 50 mm hole (bore analog).
+4. Measure: resin content, Fv, moisture, residual solvent, tack window, 10×, then cure a witness and tap / short-beam shear.
+5. Bond one cured witness to a ceramic coupon with ADH-F at 0.15–0.25 mm.
+6. Freeze film gsm, nip T/P, B-stage, and out-time.
+
+If the witness bond fails, do not “add more adhesive” on the chest. Fix impregnation.
+
+---
+
+## 11. Title-block notes
+
+- Impregnation is a CORE-LOT process, not a plate-by-plate art project.
+- Route A default. Route B only when named.
+- No epoxy in a flight-like core.
+- No hemp impregnation inside the sternum cup — the core stops at the sealed land.
+- Genealogy: CORE-LOT / RESIN-LOT / ROUTE / FILM-GSM or SHOT-MASS / DATE / OUT-TIME.
